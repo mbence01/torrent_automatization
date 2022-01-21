@@ -1,0 +1,1167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="hu">
+		<link rel="icon" href="https://static.ncore.pro/styles/ncore.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="https://static.ncore.pro/styles/ncore.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://static.ncore.pro/styles/dark/style_sslv11.css" type="text/css">
+<!--		<link rel="alternate" href="/rss/rss.xml" type="application/rss+xml" title="nCORE Torrentek">-->
+<!--		<link rel="alternate" href="/rss/rssdd.xml" type="application/rss+xml" title="nCORE Torrentek Közvetlen Letöltéssel">-->
+        <link rel="alternate" href="/rss.php?key=bf2409e29086971275630fd38714d6fa" title="nCore Torrentek közvetlen letöltéssel" />
+		<title>nCore | Főoldal</title>
+		<!--[if lt IE 7.]>
+		<script defer type="text/javascript" src="https://static.ncore.pro/static/js/pngfix.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://static.ncore.pro/static/js/fancybox/fancybox.css" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://static.ncore.pro/static/js/jquery_stuff2.js?v=1"></script>
+				<script language="JavaScript" type="text/javascript" src="https://static.ncore.pro/static/js/ncorev12.js?v=1"></script>
+	</head>
+<body>
+<input type="hidden" id="confg" data-uid="7139" data-unique="9f00d94f050bc76a1a76c92e67801c7d" />
+	<!--
+	<div style="position:fixed;left:10px;bottom:10px;z-index:2000;" id="ape-container"></div>
+	<script type="text/javaScript" src="https://static.ncore.pro/static/js/push.js"></script>
+	<script type="text/javaScript">
+		var myCats = ["xvid_hun","xvid","dvd_hun","dvd","dvd9_hun","dvd9","hd_hun","hd","xvidser_hun","xvidser","dvdser_hun","dvdser","hdser_hun","hdser","xxx_xvid","xxx_dvd","xxx_imageset","xxx_hd","mp3_hun","mp3","lossless_hun","lossless","clip","game_iso","game_rip","console","ebook_hun","ebook","iso","misc","mobil"];
+		var catsName = {"xvid_hun":"Film SD\/HU","xvid":"Film SD\/EN","dvd_hun":"Film DVDR\/HU","dvd":"Film DVDR\/EN","dvd9_hun":"Film DVD9\/HU","dvd9":"Film DVD9\/EN","hd_hun":"Film HD\/HU","hd":"Film HD\/EN","xvidser_hun":"Sorozat SD\/HU","xvidser":"Sorozat SD\/EN","dvdser_hun":"Sorozat DVDR\/HU","dvdser":"Sorozat DVDR\/EN","hdser_hun":"Sorozat HD\/HU","hdser":"Sorozat HD\/EN","mp3_hun":"MP3\/HU","mp3":"MP3\/EN","lossless_hun":"Lossless\/HU","lossless":"Lossless\/EN","clip":"Klip","game_iso":"J\u00e1t\u00e9k PC\/ISO","game_rip":"J\u00e1t\u00e9k PC\/RIP","console":"Konzol","ebook_hun":"eBook\/HU","ebook":"eBook\/EN","iso":"APP\/ISO","misc":"APP\/RIP","mobil":"APP\/Mobil","xxx_xvid":"XXX SD","xxx_dvd":"XXX DVDR\/DVD9","xxx_imageset":"XXX Imageset","xxx_hd":"XXX HD"};
+		function stripslashes (str) {
+			return (str + '').replace(/\\(.?)/g, function (s, n1) {switch (n1){case '\\':return '\\';case '0':return '\u0000';case '':return '';default:return n1;}});
+		}
+		// <![CDATA[
+		function messageReceived(text, id, channel) {
+			var d=$.parseJSON(text);
+			var pid = d.id;
+			var pcat = d.cat;
+			var pname = stripslashes(decodeURIComponent(d.name));
+			pname = pname.replace(/\+/g," ",pname);
+			if($.inArray(pcat, myCats)>=0){
+				$("#ape-container").prepend('<div id="apeT'+pid+'" class="ape-popup"><span class="comment">Új torrent!</span><span onclick="$(\'#apeT'+pid+'\').fadeOut(\'slow\', function(){$(\'#apeT'+pid+'\').remove()});" class="ape-close">X</span><br /><a href="/torrents.php?action=details&id='+pid+'">' + pname + '</a><br /><span class="comment">' + catsName[pcat] + '</span></div>');
+				setInterval("$(\'#apeT"+pid+"\').fadeOut(\'slow\', function(){$(\'#apeT"+pid+"\').remove()});", 15000);
+			}
+		};
+		var pushstream = new PushStream({
+			host: 'push.ncore.pro',
+			port: window.location.port,
+			useSSL: true,
+			modes: "websocket|eventsource|longpolling",
+			longPollingByHeaders: false,
+			longPollingTagArgument: 'tag',
+			longPollingTimeArgument: 'time',
+			longPollingUseJSONP: false,
+			longPollingTimeout: 30000
+		});
+		pushstream.onmessage = messageReceived;
+		pushstream.addChannel('live_torrents');
+		pushstream.connect();
+
+		// ]]>
+	</script>
+-->
+<div id="container">
+	<div id="container_in">
+		<div id="div_body">
+			<div id="fej_csik_felso"></div>
+			<div id="fej_fejlec_bg"><div id="fej_fejlec"></div></div>
+			<div id="menu_bg">
+			<div id="menu_all">
+				<div id="menu_left"></div>
+				<div id="menu_center" >
+								<a href="index.php" title="Új hír!"><div class="topnews_alert">!</div></a>
+								<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="index.php" id="menu_1" class="menu_link">Főoldal</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text" ><a href="torrents.php" id="menu_2" class="menu_link">Letöltés</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="upload.php" id="menu_3" class="menu_link">Feltöltés</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="requests.php" id="menu_4"  class="menu_link">Kérések</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="recommended.php" id="menu_5" class="menu_link">Ajánló</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="forum.php" id="menu_6" class="menu_link">Fórum</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="wiki.php" id="menu_7" class="menu_link">Wiki</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="users.php" id="menu_8" class="menu_link">Felhasználók</a></div>
+				<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="helpdesk.php" id="menu_9" class="menu_link">HelpDesk</a></div>
+								<div class="menu_arrow"></div>
+				<div class="menu_text"><a href="exit.php?q=9f00d94f050bc76a1a76c92e67801c7d" id="menu_11" class="menu_link">Kilépés</a></div>
+			</div>
+			<div id="menu_right"></div>
+		</div>
+	</div>
+    <div id="infosav">
+		<div class="infosav_l"></div>
+		<div class="infosav_c">
+			<div id="infosav_adatok">
+				<a href="profile.php">himivarsejk</a>
+																(Tag),
+				Pontok: <a href="wiki.php?action=read&id=33">12329</a>
+				Fel: <span class="list_alert">5.55 TiB</span>
+				Helyezés:
+				<a class="list_alert" href="wiki.php?action=read&id=581">54032</a>.
+				[<a class="list_alert" href="hitnrun.php">Aktivitás</a>]
+								[<a class="premium" href="/shop">Prémium</a>]
+								
+				<!--[<a class="premium" href="nyeremenyjatek.php">Játék</a>]-->
+				<!--[<a class="premium" href="kviz.php">Kvíz</a>]-->
+			</div>
+			<div id="infosav_extra">
+																<div id="i_e_log"><a href="log.php" title="Torrentek naplózása"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+								<div class="i_e_vonal"></div>
+				<div id="i_e_baratok"><a href="profile.php?action=friends" title="Barátok"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+				<div class="i_e_vonal"></div>
+				<div id="i_e_konyvjelzo"><a id="konyvjelzo" href="bookmarks.php" title="Könyvjelző"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+				<div class="i_e_vonal"></div>
+				<div id="i_e_beallitasok"><a href="profile.php?action=config" title="Profil beállítása"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+				<div class="i_e_vonal"></div>
+				<div id="i_e_level"><a href="inbox.php" title="Üzeneteim"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+								<div class="i_e_vonal"></div>
+				<div id="i_e_meghivo"><a href="invites" title="Meghívó"><img src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="i_e_link"></a></div>
+			</div>
+		</div>
+		<div class="infosav_r"></div>
+    </div>
+	<div id="main_all">
+		<div id="main">
+        		<div class="infocsik" style="background:#BB0000;"><a href="index.php" style="color:#fff;">Új hír van a főoldalon!</a> / <a href='promo.php' style='color:#fff;'>Új promóciós hír lett kiírva</a></div>
+		<div id="main_tartalom">
+    <div class="fobox_all" >
+        <div class="fobox_fej_t"></div>
+        <div class="fobox_fej">Hírfolyamok</div>
+        <div class="fobox_fej_b"></div>
+        <div class="fobox_tartalom_t"></div>
+        <div class="fobox_tartalom">
+	    <script type="text/javascript" language="javascript">
+		function news_del(id) {
+			if (confirm('Biztosan törlöd ezt a hírfolyamot?')) {
+				del_news(id);
+			} else {
+				return false;
+			}
+		}
+		function news_comm_del(id) {
+			if (confirm('Biztosan törlöd ezt a hozzászólást?')) {
+				del_comment(id);
+			} else {
+				return false;
+			}
+		}
+</script>
+<div class="news_block_left_t"></div>
+<div class="news_block_left">
+	<div id="add_news_close">
+		<span class="comment add_news_h" onclick="document.getElementById('add_news_close').style.display='none'; document.getElementById('add_news').style.display='block'; document.getElementById('news_input').focus();">Új hírfolyamot írok!</span>
+				| <span class="comment add_news_h"><a href="index.php?action=only_own">Saját hírfolyamok</a></span> | <span class="comment add_news_h"><a href="index.php?action=only_news">Csak hírek</a></span> | <span class="comment add_news_h"><a href="promo.php">Promóciós hírek</a></span> | <span class="comment add_news_h"><a href="index.php?action=only_stat">Oldal statisztika</a></span>
+	</div>
+		<div id="add_news" style="display:none;">
+		<form method="post" id="newssubmit">
+			<input type="hidden" name="getUnique" value="9f00d94f050bc76a1a76c92e67801c7d">
+			<table>
+				<tr>
+					<td><textarea rows="2" onKeyDown="limitText('news_input','countdown',500);" onKeyUp="autoresize(this);limitText('news_input','countdown',500);" onblur="if (this.value=='') {document.getElementById('add_news').style.display='none'; document.getElementById('add_news_close').style.display='block';}" id="news_input" name="news_input" class="beviteliMezo_news"></textarea></td>
+					<td><img onclick="send_news();" alt="Mehet" src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="g_mehet clickable" id="news_input_img"></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="back_counter"><span class="comment">Még <span id="countdown">500</span> karakter írható.</span></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+		<div id="newslist">
+	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1361879">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1361879&page=14" onclick="javascript:seen_new(this,'1361879'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2022</span> - <a href="forum.php?action=comments&amp;thread_id=34651" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Sikerekben és egészségben gazdag, boldog új évet kívánunk minden kedves Felhasználónknak! <img border="0" src="https://static.ncore.pro/static/smilies/clover.gif" alt="" /><br/><br/><img border="0" src="https://i.kek.sh/Dk0BpRdfL7t.png" alt="https://i.kek.sh/Dk0BpRdfL7t.png" class="lazy bb-image"  /></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1361129">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1361129&page=14" onclick="javascript:seen_new(this,'1361129'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Karácsony 2021</span> - <a href="forum.php?action=comments&amp;thread_id=34637" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Kedves Felhasználóink!<br/><br/>Szeretnénk köszönetet mondani az egész éves támogatásotokért, aktivitásotokért és ezúton kívánunk boldog karácsonyt mindenkinek! <br/><br/><br/><br/><img border="0" src="https://i.kek.sh/rtGweYgsuE2.jpg" alt="https://i.kek.sh/rtGweYgsuE2.jpg" class="lazy bb-image"  /></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1355687">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1355687&page=14" onclick="javascript:seen_new(this,'1355687'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k21 vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért.<br/><br/>Az nCore védelmében <span style="font-size:12pt"><span style="font-weight:bold">133 650</span></span> felhasználó segítette a Staffot, akiknek közös erővel <span style="font-size:12pt"><span style="font-weight:bold">878 012</span></span> szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint <span style="font-size:12pt"><span style="font-weight:bold">639</span></span> alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt.<br/><br/>Gratulálunk <span style="font-size:12pt"><span style="font-weight:bold">eva0408</span></span> és <span style="font-size:12pt"><span style="font-weight:bold">Tankcsapda007</span></span> felhasználóinknak, akik holtversenyben a legtöbb figurát kapták el.<br/>A második legtöbb tököt elkapó felhasználók holtversenyben <span style="font-size:12pt"><span style="font-weight:bold">prldm</span></span>, <span style="font-size:12pt"><span style="font-weight:bold">elgordo</span></span>, <span style="font-size:12pt"><span style="font-weight:bold">micike</span></span> és <span style="font-size:12pt"><span style="font-weight:bold">Voorhees1988</span></span> lettek. Mögöttük éppen csak lemaradva, a harmadik helyezett <span style="font-size:12pt"><span style="font-weight:bold">Drenzer</span></span>.<br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1355099">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1355099&page=14" onclick="javascript:seen_new(this,'1355099'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k21</span> - <a href="forum.php?action=comments&amp;thread_id=34431" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/TQIj7I34Rig.png" alt="https://i.kek.sh/TQIj7I34Rig.png" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt, béta felületeinket sem kímélik. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó játékosok a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 3000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma ezen felül 1 hónap Legend rang!<br/>&bull;&nbsp;A 25 legtöbb figurát elkapó játékos a fentiek mellett további 3000 pontot, 1 év Legend rangot és egy színes <span style="font-weight:bold"><span class="highlight">Spooky Master</span></span> egyéni rangot kap ajándékként!<br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="discord.php" class="bb-url">Discord csatornánkat</a>!<br/><br/><span style="font-weight:bold">Külön köszönetet szeretnénk mondani felhasználóinknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> <span style="font-style:italic">ambirka, AngyalBalint97, Anja97, ankree11, Anyaka, baggertor, Bayernfan25, Boothiepro, Brutalbox, Buco99, Bumfi, Cefrebeteg, cos60, crf1000, czmoncsika, Daco98, DarthFodyus, DaveArasak, Denis30, dorg71, fmb01, fortuna01, Frankycore, Gloim, gyuag82, hawenlin, Herbie26, humanik97, iBRLCode, j4zz, kanyew, kingdarien, krisz203, Laza16, lendro, Linkines, Loren, Markhu, marmaros, mesakos, Milamber86, MinionMc, Miszter88, nabde, naziking1488, nfzX, nikosssz, Nnorci, Nocur12, Pascal, PeLa, petermate2000, petgab, phoenix026, Ratata934, Retekjoska, Revanhun15, Rovaska, Rudynho007, sandedin, SkyRex, st93phoenix, steelminer, stigmata81, Tamury, TDavid97, Termeszet, tiredstar, tmate69, toboz23, Tschizzey, tyrichie, tyutyu19, Vdor01, ViBot</span>.<br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1350686">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 18 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1350686&page=14" onclick="javascript:seen_new(this,'1350686'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyári kvíz vége</span><br/><br/>Kedves Felhasználóink!<br/><br/>A nyári kvíz a végéhez közeledik. Fogadjátok szeretettel a nyolcadikat, melynek elérhetőségét megtaláljátok a <a href="forum.php?action=comments&amp;thread_id=34171" class="bb-url">fórumban</a>.<br/><br/>Ne feledjétek, ezen kívül már csak kettő lesz.<br/><br/><span class="highlight"><span style="font-size:12pt">A 10. kvíz elérhetősége már megtalálható a fórumban</span></span></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1348148">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 22 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1348148&page=14" onclick="javascript:seen_new(this,'1348148'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyári kvízek folytatás</span><br/><br/>Kedves Felhasználóink!<br/><br/>A mai napon 17:00-tól a 4. kérdéssorral folytatódik nyári kvízjátékunk, melyet <a href="https://dereferer.me/?https://docs.google.com/forms/d/e/1FAIpQLScvAq1NKPgOFU09ZkdiePJ3DChudIL6QFN6yFonQro3JrUBQw/viewform" target="_blank" class="bb-url"><span style="font-size:11pt">ITT</span></a> érhettek el.<br/><br/>Az előző három sort összesen 8191-en válaszoltátok meg, 3185 felhasználó a helyes megfejtéseiért jutalmat is szerzett, melyek összértéke 6 370 000 pont. Köszönjük, hogy ennyien részt vettetek az eddigi körökben, sok sikert kívánunk a továbbiakhoz is!<br/><br/>Amennyiben van kedvetek megvitatni a kvízzel kapcsolatos észrevételeiteket, azt <a href="forum.php?action=comments&amp;oldal=0&amp;thread_id=34171" class="bb-url">a fórumon</a> tudjátok megtenni. Ne feledjétek azonban, hogy a megoldások megosztása tiltott az adott kérdéssor lezártáig!<br/><br/>Az nCore Staff<br/><br/><br/><span class="highlight"><span style="font-size:12pt">Az 7. kvíz elérhetősége már megtalálható a fórumban</span></span></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1346305">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 25 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1346305&page=14" onclick="javascript:seen_new(this,'1346305'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyári kvízek 2021</span> - <a href="forum.php?action=comments&amp;thread_id=34171" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>A húsvéti kvíz folytatásaként ismét készültünk nektek kvízekkel, amelyek hetente fognak némi frissítést adni a szürkeállománynak, hogy ne lustuljon el a nyár folyamán. <img border="0" src="https://static.ncore.pro/static/smilies/smile1.gif" alt="" /><br/><br/>Aki egy adott kvíz minden kérdésre helyesen válaszol, 2000 pont jutalomban részesül.<br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1344854">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 27 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1344854&page=14" onclick="javascript:seen_new(this,'1344854'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Prémium változások és további fejlesztések</span> - <a href="forum.php?action=comments&amp;thread_id=34116" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Az elmúlt időszakban a Prémium rendszerrel kapcsolatban végeztünk fejlesztéseket. Ennek keretében többek között a <a href="shop" class="bb-url">Prémium menü</a> kinézetét alakítottuk át annak érdekében, hogy jobban áttekinthető, könnyebben kezelhető legyen. Ezzel a Letöltés és a Meghívó oldal mellett ez lett a harmadik menüpont, ahol az új Béta felülettel találkozhattok.<br/><br/>A kezelőfelület átalakítása mellett az új meghívózási rendszerrel kapcsolatos visszajelzéseiteket, javaslataitokat is figyelembe vettük. A klasszikus Prémium csomagok mellett mostantól lehetőség nyílik pontok vásárlására is, amelyet tetszőleges célokra (kérés kiírása, kérésre szavazás, meghívó küldése) használhattok fel. Továbbá Prémium tagsággal rendelkező felhasználóink számára 5000 pontra csökkentettük a meghívó árát.<br/><br/>Prémium előfizetés és pontok vásárlása esetén is az oldal működési költségeihez járultok hozzá.<br/><br/>Köszönjük eddigi és jövőbeli támogatásotokat!<br/><br/>Az nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1342513">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 30 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1342513&page=14" onclick="javascript:seen_new(this,'1342513'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><table style="border-collapse:collapse;"><tr><td class="bb_table_td2"><br/>Kedves Felhasználóink!<br/><br/>Szeretett barátunk, kollégánk, aki az oldal fennállása óta velünk volt és rengeteget dolgozott a közösségért, súlyos betegségben elhunyt. Ezúton szeretnénk elbúcsúzni tőle.<br/><br/>Emlékét megőrizzük.<br/><br/>Az nCore Staff</td><td class="bb_table_td2"><div style="text-align:right"><img border="0" src="https://i.kek.sh/XGn2FVnxd0m.png" alt="https://i.kek.sh/XGn2FVnxd0m.png" class="lazy bb-image"  /></div></td></tr></table></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1342204">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 31 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1342204&page=14" onclick="javascript:seen_new(this,'1342204'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Meghívó rendszer fejlesztése</span> - <a href="forum.php?action=comments&amp;thread_id=34032" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Mint azt az elmúlt napokban néhányan már láthattátok, az nCore megújulásának következő fázisaként az oldal meghívózási rendszerét fejlesztettük. A <a href="hu/invites" class="bb-url">[Meghívó]</a> menüpontba belépve egy megújult felület fogad titeket, és kis mértékben változtattunk a meghívási folyamaton is.<br/><br/>A módosításokat néhány pontban foglaljuk össze számotokra:<br/><br/>&bull;&nbsp; Meghívókat mostantól nem lehet e-mail címre küldeni. Helyette meghívókódokat lehet generálni, amelyeket tetszőleges kommunikációs csatornán adhattok át a meghívni kívánt személynek.<br/>&bull;&nbsp; A meghívózás a továbbiakban is kizárólag Elite vagy magasabb rangú felhasználók számára érhető el (kivételt képeznek ez alól az aktív <a href="premium.php" class="bb-url">Prémium</a> csomaggal rendelkezők, akik rangtól függetlenül vásárolhatnak meghívókat).<br/>&bull;&nbsp; A meghívókódok ára változatlanul 15 000 pont marad (Prémium felhasználók számára 10 000 pont).<br/>&bull;&nbsp; Egy időben maximum 10 db meghívókóddal rendelkezhet mindenki.<br/>&bull;&nbsp; Az 1 napon belül fel nem használt meghívókódokat visszavonjuk, az elköltött pontokat ebben az esetben visszakapjátok.<br/>&bull;&nbsp; Mindenki, aki a régi rendszerben rendelkezett függőben lévő (kiváltott vagy elküldött, de még nem felhasznált) meghívóval, 2021. szeptember 1-jéig annyi meghívókódot generálhat ingyen, amennyi ilyen meghívója volt. Ősztől erre már nem lesz lehetőség.<br/><br/>Ismételten felhívjuk a figyelmeteket, hogy a hozzáférésetek az oldalhoz megszűnik, amennyiben 8 hétig nem léptek be az oldalra. Kérünk Titeket, figyeljetek oda erre jobban, mert ahogy eddig, ezután sem áll módunkban senkit visszaállítani! <br/><br/>Kellemes pihenést és jó kikapcsolódást kívánunk a nyári hónapokra mindannyiótoknak!<br/><br/>Az nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1336666">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 39 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1336666&page=14" onclick="javascript:seen_new(this,'1336666'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">HTTPS tracker</span> - <a href="forum.php?action=comments&amp;thread_id=33848" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Örömmel értesítünk titeket, hogy mostantól a mi trackerünkön is elérhetővé vált a HTTPS-en keresztüli kommunikáció. A HTTPS biztonságos, titkosított kapcsolatot biztosít a torrent kliens és az nCore trackere között, így védve a felhasználót az adatcsere harmadik fél általi lehallgatásától.<br/><br/>A funkciót a <a href="profile.php?action=config" class="bb-url">Beállítások menüben</a> tudjátok beállítani, a &quot;TLS tracker&quot; lehetőséget bepipálva. Ezután az újonnan letöltött torrentfájlokba automatikusan <span style="font-weight:bold">https://</span> kezdetű elérési útvonallal fognak belekerülni az nCore tracker elérhetőségei.<br/><br/>Amennyiben problémát tapasztalsz, kapcsold ki a funkciót vagy kérdezz a hírhez tartozó fórumtopicban!<br/><br/>- nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1334737">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 41 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1334737&page=14" onclick="javascript:seen_new(this,'1334737'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Húsvét </span> - <a href="forum.php?action=comments&amp;thread_id=33787" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Hamarosan itt a húsvét, ebben az évben is szeretnénk nektek keresztrejtvénnyel kedveskedni, melyet <a href="kviz.php" class="bb-url">ITT</a> érhettek el.<br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/XM2Ot6tyDLg.png" alt="https://i.kek.sh/XM2Ot6tyDLg.png" class="lazy bb-image"  /></div><br/><br/>A játék 2021.04.03-án 18 órakor kezdődik és 2021.04.07.-én 18 órakor ér véget.<br/><br/><span style="font-weight:bold"><span class="highlight">A játék leírása:</span></span><br/>A keresztrejtvény alatt található 13 kérdést kell megválaszolnotok, a válaszokat a kérdés száma szerinti sorba kell beírnotok. A színes négyzetekben szereplő betűket fentről lefelé összeolvasva megkapjátok a rejtvény megfejtését, amely egy értelmes magyar szó.<br/><br/>Minden helyes megfejtő 1500 pontot, és egy <img border="0" src="https://static.ncore.cc/static/images/kviz_ico.png" alt="https://static.ncore.cc/static/images/kviz_ico.png" class="lazy bb-image"  /> ikont kap a neve mellé. A jutalmak a játék lezárását követően kerülnek jóváírásra.<br/><br/><span style="font-weight:bold"><span class="highlight">Fontos tudnivalók:</span></span><br/><br/>&bull;&nbsp;A keresztrejtvény minden négyzetének kitöltése kötelező!<br/>&bull;&nbsp;A megoldás ellenőrzésénél nem vesszük figyelembe a kis- és nagybetűket!<br/>&bull;&nbsp;A megoldás angol ábécé karaktereivel megadott változata is megfelelő!<br/>&bull;&nbsp;Csupán egy lehetőségetek van a megoldás beküldésére, így ellenőrizzétek, hogy helyesen írtátok-e be a megfejtést!<br/>&bull;&nbsp;A megoldás publikálása kizárást eredményez az oldalról!<br/><br/>Jó szórakozást és kellemes húsvéti ünnepeket kíván a Staff!</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1330739">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 46 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1330739&page=14" onclick="javascript:seen_new(this,'1330739'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Az elmúlt időszakban sok frissítést és hibajavítást hajtottunk végre a háttérben az oldalon, ám ezekből valószínűleg csak az átmeneti leállásokat tapasztaltátok. Folyamatosan dolgozunk azon, hogy lecsökkentsük a rajtunk kívülálló hibák lehetőségét, ezen törekvéseink eredménye sok felhasználónkat érint közvetve és közvetlenül is pozitívan.<br/><br/>A korábbi hírben jelzett autodl konfig fájl frissítése jelenleg is függőben van: az aktuális helyzetről a továbbiakban említett topicban értesülhettek.<br/>Az elmúlt időszakban tapasztalt IRC-szerver leállások sokaknak okoztak kellemetlenséget az autodl funkció használata során, emiatt az #ncore-bot csatornánkat átköltöztettük egy másik szolgáltatóhoz.<br/><br/>Az átállást igyekeztünk számotokra megkönnyíteni. Az <a href="forum.php?action=comments&amp;thread_id=22986" class="bb-url">nCore Autodl</a> topicban készült egy összefoglaló a teendőkről, a kapcsolódó összes beállítási utasítást aktualizáltuk. (Our description of autodl is available in English <a href="forum.php?action=comments&amp;thread_id=22985" class="bb-url">here</a>)<br/><span class="highlight">Kérünk mindenkit, akik ezt a szolgáltatást használják, hogy hajtsák végre a szükséges módosításokat a zavartalan működés érdekében.</span><br/><br/>Ezúton köszönjük az iRCLiNE eddigi közreműködését.</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1327888">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 50 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1327888&page=14" onclick="javascript:seen_new(this,'1327888'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Domain és egyéb változások</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>A korábbi hírben jelzett domain váltás miatt sokan jeleztétek felénk, hogy nem tudtok bejelentkezni az oldalra, nem jut el hozzátok a jelszó-emlékeztető e-mail. Ezt az okozhatja, hogy olyan e-mail címmel vagytok regisztrálva, amihez már nincs hozzáférésetek vagy valamilyen, nem megbízható szolgáltatónál van a nálunk regisztrált e-mail címetek.<br/><br/>Tapasztalataink szerint az utóbbi időben az alábbi szolgáltatókhoz tartozó e-mail címekkel kapcsolatban jelentkeztek a leggyakrabban ilyen problémák: vipmail.hu, pr.hu, invitel.hu, mailbox.hu, citromail.hu, freemail.hu, gmail.hu, yahoo.com, chello.hu.<br/><br/><span style="font-weight:bold"><span class="highlight">Szeretnénk megkérni mindenkit, aki a fenti szolgáltatókhoz tartozó e-mail címet használ az oldalon, hogy a saját fiókja biztonsága érdekében cserélje azt le egy megbízhatóbb szolgáltatónál (pl. gmail.com) regisztrált e-mail címre!<br/>A regisztrált e-mail cím cseréjét kérjük azoktól is, akik már nem működő e-mail címmel vannak regisztrálva! A nem működő e-mail cím használata a felhasználói fiók végleges elvesztésének kockázatával jár.</span></span><br/><br/>Jelenleg megadott e-mail címeteket a <a href="profile.php?action=config" class="bb-url">Beállítások</a> menüben tudjátok ellenőrizni, illetve szükség esetén módosítani.<br/><br/>A domain váltás után sokan jeleztetek felénk az RSS feed-del kapcsolatos problémákat is, amiket jellemzően a régi, .cc-s domain név használata okozott.<br/><span style="font-weight:bold"><span class="highlight">Emiatt szeretnénk megkérni mindenkit, hogy a régi RSS címeket cserélje le az új .pro domain név alatt elérhető címre!</span></span><br/><br/>Az autodl-irssi-t használó felhasználóinknak szeretnénk jelezni, hogy az nCore trackerhez tartozó konfig fájl frissítése folyamatban van, a javítás kiadásának ideje viszont sajnos nem tőlünk függ. A köztes időszakban az <a href="forum.php?action=comments&amp;thread_id=22986" class="bb-url">nCore Autodl</a> fórumtopicban kaphattok segítséget a probléma áthidalásához.<br/><span style="font-weight:bold"><span class="highlight">Javasoljuk, hogy időnként frissítsétek az autodl konfigot, annak érdekében, hogy a javítás a kiadását követően a lehető legkorábban eljusson hozzátok!</span></span><br/><br/>A fentiek mellett szeretnénk felhívni a figyelmeteket arra is, hogy a domain váltással együtt Prémium csomagjaink is megváltoztak, így a korábbi partnereinken keresztül már nincs lehetőség előfizetés vásárlására.<br/><span style="font-weight:bold"><span class="highlight">Kérjük, hogy aki Prémium csomagot szeretne vásárolni, az a <a href="premium.php" class="bb-url">Prémium menüben</a> aktuálisan szereplő lehetőségek közül válasszon!</span></span></div><br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1327039">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 51 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1327039&page=14" onclick="javascript:seen_new(this,'1327039'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Címváltozás</span><br/><br/>Kedves Felhasználóink!<br/><br/>Ezúton tájékoztatunk titeket, hogy az oldalunk elérhetősége megváltozott. Mostantól az nCore-t a https://ncore.pro/ címen keresztül érhetitek el.<br/>Kérjük, hogy akinek bármilyen formában (pl. könyvjelzőként) az nCore régi címei vannak elmentve, az frissítse ezeket az új (ncore.pro) címre.<br/><br/>A gyors átállás érdekében kérjük, hogy barátaitokkal, ismerőseitekkel is osszátok meg a hírt!<br/><br/>- az nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1325164">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 1 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1325164&page=14" onclick="javascript:seen_new(this,'1325164'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt">Kedves Felhasználóink!<br/><br/>A Magyar Vöröskereszt a koronavírus elleni küzdelemhez önkénteseket keres. Bővebb információt a szervezet <a href="https://dereferer.me/?http://voroskereszt.hu/hogyan-segithetsz/onkentesseg/#tab-id-1" target="_blank" class="bb-url">honlapján</a> vagy <a href="https://dereferer.me/?https://www.facebook.com/magyarvoroskereszt" target="_blank" class="bb-url">Facebook</a> oldalán találtok. <br/>Ha részt veszel a védekezésben, azt mi egy hónap prémium funkcióval tudjuk megköszönni. <br/>A funkció aktiválásáról bővebb <a href="/wiki.php?action=read&amp;id=2222" class="bb-url">információt itt találtok</a>.<br/><br/><div class="js-video widescreen" align="center"><iframe width="610" height="502" src="https://www.youtube.com/embed/gPk5x56KGFQ" frameborder="0" allowfullscreen></iframe></div><br/><span style="color:highlight"><br/>-Figyelem! A hír közzétételét nem a Magyar Vöröskereszt kérte, nem is tud az akcióról!-<br/></span></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1323827">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 2 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1323827&page=14" onclick="javascript:seen_new(this,'1323827'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2021</span> - <a href="forum.php?action=comments&amp;thread_id=31578" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Sikerekben és egészségben gazdag, boldog új évet kívánunk minden kedves Felhasználónknak! <img border="0" src="https://static.ncore.pro/static/smilies/clover.gif" alt="" /><br/><br/><img border="0" src="https://i.kek.sh/ecU7kLMA51R.png" alt="https://i.kek.sh/ecU7kLMA51R.png" class="lazy bb-image"  /></div><br/><br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1322870">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1322870&page=14" onclick="javascript:seen_new(this,'1322870'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Karácsonyi hírek 2020</span> - <a href="forum.php?action=comments&amp;thread_id=31547" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Szeretnénk megköszönni egész éves támogatásotokat, aktivitásotokat, ezúton kívánunk nektek kellemes ünnepeket!<br/><br/><div style="text-align:center"><img border="0" width="550" src="https://i.kek.sh/x2cd96K3fkr.png" alt="https://i.kek.sh/x2cd96K3fkr.png" class="lazy bb-image"/><br/><span class="small">Ez egy átméretezett kép, <a class="browser" href="https://i.kek.sh/x2cd96K3fkr.png" target="_blank">kattints ide</a> az eredeti méretben való megjelenítéséhez.</span></div><br/><br/><br/>Karácsony alkalmából kvíz játékot indítunk, melyet a <a href="kviz.php" class="bb-url">[Kvíz]</a> menüpontban érhettek el. A játék 2020.12.24. 18:00-tól 2020.12.31. 18:00-ig tart. Aki legalább 11 kérdésre helyesen válaszol, 1000 pontot és egy <img border="0" src="https://static.ncore.cc/static/images/kviz_ico.png" alt="https://static.ncore.cc/static/images/kviz_ico.png" class="lazy bb-image"  /> ikont nyer a neve mellé.<br/><br/><br/><span class="highlight"><span style="font-weight:bold">Az ünnepekre tekintettel Prémium akciót is hirdetünk, melynek keretében akár 100%-kal hosszabb időre vásárolhattok előfizetést. A részleteket a <a href="premium.php" class="bb-url">Prémium</a> menüben találjátok.</span></span><br/><br/><br/>Külön szeretnénk felhívni a figyelmeteket az oldalon megadott e-mail címetek frissen tartásának fontosságára, különös tekintettel a Vodafone-os (UPC-s) szolgáltatói e-mail címet (@upcmail.hu, @chello.hu, @monornet.hu, @upctelekom.hu, @upc.hu, @vodamail.hu végződésű e-mail címek) használó felhasználóinkra, hiszen ezek a címek 2021-ben megszűnnek. A nem működő e-mail cím használata a felhasználói fiók végleges elvesztésének kockázatával jár.<br/>Jelenleg megadott e-mail címeteket a <a href="profile.php?action=config" class="bb-url">Beállítások</a> menüben tudjátok ellenőrizni, illetve szükség esetén módosítani.</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1320172">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 7 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1320172&page=14" onclick="javascript:seen_new(this,'1320172'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Cyber Monday</span><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/YMOlTt7QUDO.png" alt="https://i.kek.sh/YMOlTt7QUDO.png" class="lazy bb-image"  /></div><br/><br/>Kedves Felhasználóink!<br/><br/>A mai naptól Cyber Monday akciót hirdetünk Prémium csomagjainkra, melynek részleteit a <a href="premium.php" class="bb-url">Prémium menüben</a> találjátok meg! Az akció keretében akár a megszokottnál 100%-kal hosszabb időtartamra aktiválhattok Prémium előfizetést.<br/><br/>Az akció 2020. december 6.-áig tart.<br/><br/>Ne habozz, válaszd ki most a szokásaidnak megfelelő csomagot, és élvezd a korlátlan letöltés adta lehetőségeket!</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1317405">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1317405&page=14" onclick="javascript:seen_new(this,'1317405'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k20 vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért.<br/><br/>Az nCore védelmében <span style="font-size:12pt"><span style="font-weight:bold">178 943</span></span> felhasználó segítette a Staffot, akiknek közös erővel <span style="font-size:12pt"><span style="font-weight:bold">1 213 853</span></span> szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint <span style="font-size:12pt"><span style="font-weight:bold">718</span></span> alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt.<br/><br/>Gratulálunk <span style="font-size:12pt"><span style="font-weight:bold">micike</span></span> felhasználónknak, aki a legtöbb figurát kapta el.<br/>A második legtöbb tököt elkapó felhasználók holtversenyben <span style="font-size:12pt"><span style="font-weight:bold">CrazyCore</span></span> és <span style="font-size:12pt"><span style="font-weight:bold">MagdiKV</span></span> lettek. Mögöttük éppen csak lemaradva, a harmadik helyezett <span style="font-size:12pt"><span style="font-weight:bold">Lauraca</span></span> lett.<br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1316935">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1316935&page=14" onclick="javascript:seen_new(this,'1316935'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k20</span> - <a href="forum.php?action=comments&amp;thread_id=31291" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/mIyKpaqklOi.png" alt="https://i.kek.sh/mIyKpaqklOi.png" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó játékosok a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 1000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma ezen felül 1 hónap Legend rang!<br/>&bull;&nbsp;A 25 legtöbb figurát elkapó játékos a fentiek mellett további 1000 pontot, 1 év Legend rangot és egy színes <span style="font-weight:bold"><span class="highlight">Spooky Master</span></span> egyéni rangot kap ajándékként!<br/><br/><span style="font-weight:bold"><span class="highlight">A Spooky Dayz indulásával egyidejűleg akciót hirdetünk Prémium csomagjainkra is. A részletekről október 30. 19:00-tól, a <a href="premium.php" class="bb-url">Prémium menüben</a> tájékozódhattok.</span></span><br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="discord.php" class="bb-url">Discord csatornánkat</a>!<br/><br/><span style="font-weight:bold">Köszönetet szeretnénk mondani néhány felhasználónknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> <span style="font-style:italic">Angry, Bayernfan25, ccadmin, Dave83, David16, Dragoneye, Duckee, enginev3, foreverozzy, fortuna01, gamer5, gerike73, greenberet, Gregoryj, Hennessy7, herkules8, hiireviu777, iBRLCode, Impulsivex, JF05, laszlo200, LASZLO200, Laza16, Leckie, Lizzzy, Loren, MadBone, Markhu, maskacica, Matu01, MrHope, MrThomas17, nagyonjofilmek3, naziking1488, norbertnorbi96, nyalkascsiga, rachelgreen, Retekjoska, rkv01xc72a, robika1106, S3CT0R, salays, sandedin, simson14, SkyRex, Stronge, Suria, SzaszaV, tonight, tyrichie, Vdor01, volubepossum, ZalaiTibi91, Zolika5125</span>.<br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1301843">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 37 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1301843&page=14" onclick="javascript:seen_new(this,'1301843'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Anyák napja</span> - <a href="forum.php?action=comments&amp;thread_id=30678" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Ezúton köszöntünk minden kedves Édesanyát anyák napja alkalmából - legyen nagyon boldog napotok!<br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/xoZJ6SUij5R.png" alt="https://i.kek.sh/xoZJ6SUij5R.png" class="lazy bb-image"  /></div><br/><br/>Mellékesen szeretnénk felhívni figyelmeteket, hogy a koronavírus helyzetre tekintettel jelentősen leakcióztuk <a href="premium.php" class="bb-url">prémium</a> csomagjainkat, most akár 50%-kal több prémium időt kaphattok. Bízunk benne, hogy ezzel többeteknek is a kedvébe tudunk járni.<br/><br/>Üdvözlettel,<br/>az nCore csapata</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1299964">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 39 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1299964&page=14" onclick="javascript:seen_new(this,'1299964'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Húsvéti játékok vége</span> - <a href="forum.php?action=comments&amp;thread_id=30595" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>A szerdai nappal 2. húsvéti játékunk véget ért, a tegnapi nappal pedig a Discord kvízeink is. Köszönjük szépen mindenkinek, aki részt vett játékaink bármelyikében is!<br/><br/>Egy kis statisztikát szeretnénk megosztani veletek:<br/>Az 1. húsvéti játékunkon 28033-an küldtétek be megfejtéseiteket, közülük 25560-an a helyeset, az interpolációt.<br/>A 2. húsvéti játékunkon 5006-an küldtétek be megfejtéseiteket, közülük 3801-en a jót, a rózsavizet.<br/>Továbbá 7559 tojást találtatok meg.<br/><br/>Discordon 13 kvízünk volt, így összesen az oldalon és a Discordon zajló játékokkal 25650 pont volt szerezhető.<br/>A tojások határozatlan ideig lesznek a nevetek mellett.<br/><br/><span class="highlight">Ne feledjétek, a <a href="premium.php" class="bb-url">prémium</a> akciónk még továbbra is él.</span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1299490">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 40 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1299490&page=14" onclick="javascript:seen_new(this,'1299490'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Húsvét</span> - <a href="forum.php?action=comments&amp;thread_id=30576" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify"><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/EU6Dd8WEAOR.png" alt="https://i.kek.sh/EU6Dd8WEAOR.png" class="lazy bb-image"  /></div><br/><br/>Húsvétra ígért második játékunkról <a href="kviz.php" class="bb-url">ITT</a> olvashattok.<br/><br/>Az ünnep alkalmából Prémium akciót is hirdetünk, melynek alkalmából bizonyos csomagokért <span class="highlight">dupla annyi időt kaptok</span>. A részletekről a <a href="premium.php" class="bb-url">Prémium</a> menüben tájékozódhattok!<br/><br/>További jó szórakozást és kellemes húsvéti ünnepeket kíván a Staff!<br/><br/>UI: Várunk továbbra is mindenkit a <a href="wiki.php?action=read&amp;id=2118" class="bb-url">Discord</a> szerverünkön, ahol még mindig zajlanak kisebb játékaink.</div><br/><br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1298626">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 41 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1298626&page=14" onclick="javascript:seen_new(this,'1298626'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Tavaszi frissítés II.</span> - <a href="forum.php?action=comments&amp;thread_id=30535" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználóink!<br/><br/>Szeretnénk tájékoztatni Titeket, hogy az előző hónapban kihirdetett aktivitásra vonatkozó kedvezmény ebben a hónapban véget ér.<br/><br/>Ezzel a kedvezménnyel a járvány alatt tapasztalt kezdeti nehézségek áthidalására szerettünk volna segítséget nyújtani Nektek, azonban szomorúan tapasztaltuk, hogy sokan visszaéltetek a segítségünkkel:<br/>az intézkedés óta a seedelési kedv nagy mértékben alábbhagyott, a torrentek lassabban tölthetőek le.<br/><br/>Mostantól kezdve annak tudatában töltsetek le, hogy a hónap végén már ismét számon fogjuk kérni a torrentek visszatöltését a korábban megszokottak szerint.<br/><br/>Kérünk továbbá benneteket, hogy lehetőség szerint támogassátok az oldalt akár a legkisebb prémium csomag megvásárlásával is - ez nem kötelező, de sokat segítenétek nekünk vele.</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1298502">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 41 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1298502&page=14" onclick="javascript:seen_new(this,'1298502'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Húsvéti keresztrejtvény</span> - <a href="forum.php?action=comments&amp;thread_id=30526" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Hamarosan itt a Húsvét, s ez évben is szeretnénk kedveskedni Nektek játékkal. A kialakult helyzet miatt most kettő is lesz.<br/>Az első egy keresztrejtvény, melyet <a href="kviz.php" class="bb-url">ITT</a> értek el.<br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/XM2Ot6tyDLg.png" alt="https://i.kek.sh/XM2Ot6tyDLg.png" class="lazy bb-image"  /></div><br/><br/><span class="highlight"><span style="font-weight:bold">A játék időtartama:</span></span> 2020.04.03-án 18 órakor kezdődik és 2020.04.11-én 18 órakor ér véget.<br/><br/><span class="highlight"><span style="font-weight:bold">A játék leírása:</span></span><br/>A keresztrejtvény alatt található 12 kérdést kell megválaszolnotok, a válaszokat a kérdés száma szerinti sorba kell beírnotok. A színes négyzetekben szereplő betűket fentről lefelé összeolvasva megkapjátok a rejtvény megfejtését, amely egy értelmes magyar szó. <br/><br/><span class="highlight"><span style="font-weight:bold">A jutalmazás a következőképpen alakul:</span></span><br/>Minden helyes megfejtő 2000 pontot kap (mely a játék végén lesz jóváírva) + <img border="0" src="https://static.ncore.cc/static/images/kviz_ico.png" alt="https://static.ncore.cc/static/images/kviz_ico.png" class="lazy bb-image"  /> ikont a neve mellé.<br/><br/><span class="highlight"><span style="font-weight:bold">Fontos tudnivalók:</span></span><br/>&bull;&nbsp; A keresztrejtvény minden négyzetének kitöltése kötelező!<br/>&bull;&nbsp; A megoldás ellenőrzésénél nem vesszük figyelembe a kis- és nagybetűket!<br/>&bull;&nbsp; A megoldás angol ábécé karaktereivel megadott változata is megfelelő!<br/>&bull;&nbsp; Csupán egy lehetőségetek van a megoldás beküldésére, így figyeljetek arra, hogy helyesen írtátok-e be a megfejtést!<br/>&bull;&nbsp; A megoldás publikálása kizárást eredményez!<br/><br/><br/>Jó szórakozást és kellemes húsvéti ünnepeket kíván a Staff!<br/><br/>UI: Várunk minden kedves Felhasználót a <a href="discord.php" class="bb-url">Discord</a> szerverünkre, ott is lesznek kisebb játékok.</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1296426">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 43 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1296426&page=14" onclick="javascript:seen_new(this,'1296426'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Tavaszi frissítés</span> - <a href="forum.php?action=comments&amp;thread_id=30435" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>A rendkívüli helyzetre való tekintettel a hó végi hit'n'run elszámolásokat felfüggesztettük, azaz a mostantól letöltött torrentek nem számítanak bele a hit'n'run-ba, valamint a 30 napos letöltés megvonásokat feloldottuk. Ezeket a hónap végén utólag fogjuk törölni, ezért az <a href="/hitnrun.php" class="bb-url">Aktivitás</a> menüt ideiglenesen figyelmen kívül hagyhatjátok. <br/><br/>Mindenkit arra szeretnénk megkérni, hogy ezzel a kedvezménnyel éljen és ne visszaéljen, ne most tárazzátok be az elkövetkezendő 100 évre a <s>liszt, élesztő és olaj</s> sorozat és pornó tartalékotokat!<br/><br/>Gondoljatok azokra akik most otthonról dolgoznak, tanulnak vagy éppen életük egyik fontos mérföldkövéhez érnek májusban és az érettségire készülnének, de a hasznos időtöltés helyett a lelassult internettel küszködnek. <br/><br/>A hó végi hit'n'run elszámolásának felfüggesztése visszavonásig érvényes.<br/><br/>Elkészült a régóta várt IMDb kereső, amit <a href="wiki.php?action=read&amp;id=2188" class="bb-url">így</a> tudtok használni.<br/><br/>Maradjatok otthon és vigyázzatok egymásra!<br/><br/><div class="js-video widescreen" align="center"><iframe width="450" height="253" src="https://www.youtube.com/embed/ZO-rpgTese0" frameborder="0" allowfullscreen></iframe></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1294873">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 1 éve 46 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1294873&page=14" onclick="javascript:seen_new(this,'1294873'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Tavaszi megújulás</span><br/><br/>Kedves Felhasználóink!<br/><br/>A tavasz a megújulás időszaka, így az alábbi villám-akcióval kedveskedünk Nektek:<br/>Limitált ideig kedvezményes áron - 50 pontért - <a href="invite.php" class="bb-url">hívhatjátok meg</a> ismerőseiteket az oldalra!<br/><br/>Az akciós <a href="invite.php" class="bb-url">meghívóküldés</a> lehetősége minden Elite és Legend rangú felhasználónk számára elérhető, akár több meghívót is küldhettek.<br/>Aki szeretne meghívót küldeni, kérjük, hogy mielőbb éljen a lehetőséggel <a href="invite.php" class="bb-url">ide kattintva</a>!<br/><br/>Üdvözlettel,<br/>az nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1288907">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 2 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1288907&page=14" onclick="javascript:seen_new(this,'1288907'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2020</span> - <a href="forum.php?action=comments&amp;thread_id=30190" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Kedves Felhasználóink!<br/><br/>Sikerekben gazdag, boldog új évet kívánunk mindannyiótoknak!<br/><br/><span style="font-weight:bold"><span class="highlight">Prémium akciónk továbbra is él, melynek részleteiről a <a href="premium.php" class="bb-url">Prémium</a> menüben tájékozódhattok.</span></span><br/><br/><img border="0" src="https://nc-img.cdn.l7cache.com/Happy-New-Year-2020-Transparent.png" alt="https://nc-img.cdn.l7cache.com/Happy-New-Year-2020-Transparent.png" class="lazy bb-image"  /><br/><br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1287768">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 4 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1287768&page=14" onclick="javascript:seen_new(this,'1287768'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Karácsony 2019</span> - <a href="forum.php?action=comments&amp;thread_id=30167" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Kedves Felhasználóink!<br/><br/>Szeretnénk köszönetet mondani az egész éves támogatásotokért, aktivitásotokért. Ezúton kívánunk boldog karácsonyt mindenkinek, az alábbi, általunk készített képeslappal!<br/><br/><span style="font-weight:bold"><span class="highlight">Az ünnepekre tekintettel januárig Prémium akciót hirdetünk, melynek részleteiről a <a href="premium.php" class="bb-url">Prémium</a> menüben tájékozódhattok.</span></span><br/><br/><img border="0" width="550" src="https://a0c8255b1f272132.cdn.l7cache.com/karilap_ncore_2019.jpg" alt="https://a0c8255b1f272132.cdn.l7cache.com/karilap_ncore_2019.jpg" class="lazy bb-image"/><br/><span class="small">Ez egy átméretezett kép, <a class="browser" href="https://a0c8255b1f272132.cdn.l7cache.com/karilap_ncore_2019.jpg" target="_blank">kattints ide</a> az eredeti méretben való megjelenítéséhez.</span><br/><br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1285281">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 7 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1285281&page=14" onclick="javascript:seen_new(this,'1285281'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/N6riA.png" alt="https://i.kek.sh/p1/N6riA.png" class="lazy bb-image"  /></div><br/><br/>Kedves felhasználók!<br/><br/>Az idén mi is készültünk <span class="highlight"><span style="font-weight:bold">Black Friday</span></span> akcióval, amiről bővebb információt a <a href="/premium.php" class="bb-url">prémium</a> oldalon találtok.<br/><br/>Az akció a Cyber Monday végéig, azaz december másodikáig tart.<br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1282924">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1282924&page=14" onclick="javascript:seen_new(this,'1282924'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k19 vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért.<br/><br/>Az nCore védelmében <span style="font-size:12pt"><span style="font-weight:bold">177 047</span></span> felhasználó segítette a Staffot, akiknek közös erővel <span style="font-size:12pt"><span style="font-weight:bold">1 187 688</span></span> szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint <span style="font-size:12pt"><span style="font-weight:bold">700</span></span> alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt.<br/><br/>A Staff úgy döntött, hogy idén a figurák legalább 93%-ának visszaverésében segítő felhasználók jutalmában azok is részesülnek, akik legalább 90%-os teljesítményt nyújtottak. <br/><br/>Gratulálunk egy neve elhallgatását kérő felhasználónknak, aki a legtöbb figurát kapta el.<br/>A második legtöbb tököt elkapó felhasználó <span style="font-size:12pt"><span style="font-weight:bold">PhantomBoy27</span></span> lett. Mögötte éppen csak lemaradva, a harmadik helyezett <span style="font-size:12pt"><span style="font-weight:bold">varjasmate13</span></span> lett.<br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1282241">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1282241&page=14" onclick="javascript:seen_new(this,'1282241'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k19</span> - <a href="forum.php?action=comments&amp;thread_id=30009" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/ZfaDL.png" alt="https://i.kek.sh/p1/ZfaDL.png" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó felhasználók a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 1000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma ezen felül 1 hónap Legend rang!<br/>&bull;&nbsp;Aki legalább a figurák 93%-ának visszaverésében segít, a fentiek mellett további 1000 pontot, 1 év Legend rangot és egy színes <span class="highlight">Spooky Master</span> egyéni rangot kap ajándékként!<br/><br/><span style="font-weight:bold"><span class="highlight">A Spooky Dayz indulásával egyidejűleg akciót hirdettünk egyes Prémium csomagjainkra is. Az akcióról a <a href="premium.php" class="bb-url">Prémium menüben</a> tájékozódhattok részletesen.</span></span><br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="discord.php" class="bb-url">Discord csatornánkat</a>!<br/><br/><span style="font-weight:bold">Köszönetet szeretnénk mondani néhány felhasználónknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> fortuna01, Awendery, Bayernfan25, ConVector, Counter1, Duckee, Happydoll, Hugo1997, Kardoso, Kory5, Leckie, Loren, MagyarValeria77, Norbee92, PeLa, PhantomBoy27, Retekjoska, SilentNightmare, Skrey22, SkyRex, ZalaiTibi91, e30st, foxi69, hecsa77, hotea73, iBRLCode, kitade, lakkcipo, netuddki6, rogersmith, slania, tbece, torrent5, viktor621.<br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1272087">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 20 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1272087&page=14" onclick="javascript:seen_new(this,'1272087'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Kvíz 5.0</span> - <a href="forum.php?action=comments&amp;thread_id=29865" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználók!<br/><br/>Újabb kvízt hirdetünk, amely a korábbi évekhez hasonlóan szintén az oldal szabályzatának ismeretét teszteli. A játékot 19:00-tól az <a href="kviz.php" class="bb-url">alábbi linkre</a> kattintva érhetitek el. A kitöltésre 7 nap áll rendelkezésre.<br/><br/>Jó keresgélést és felvilágosodást kívánunk minden résztvevő számára!</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1269985">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 23 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1269985&page=14" onclick="javascript:seen_new(this,'1269985'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyerj páros jegyet a SZIN-RE! II.</span> - <a href="forum.php?action=comments&amp;thread_id=29791" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/sq45k.jpg" alt="https://i.kek.sh/p1/sq45k.jpg" class="lazy bb-image"  /></div><br/><br/><span style="font-weight:bold">Nyeremények:</span> <br/><br/>&bull;&nbsp;7 db páros <span style="text-decoration:underline">bérlet</span><br/><br/><br/><br/>SZIN fellépők és program itt: <a href="https://dereferer.me/?https://szin.org/" target="_blank" class="bb-url">https://szin.org/</a><br/><br/><span class="highlight">A bérletek névre szólnak és nem átruházhatóak, átvételükhöz a nyertes(ek) személyes adatainak megadása szükséges!</span><br/><br/><br/>A játék oldalát itt éritek el: <a href="/nyeremenyjatek.php" class="bb-url">Nyereményjáték</a><br/>Bővebb információ: <a href="/wiki.php?action=read&amp;id=949" class="bb-url">Szabályzat</a><br/>A kérdésekre <span style="font-weight:bold">2019-08-26 09:38:59-ig</span>tudtok válaszolni.<br/>Sorsolás és a nyertesek értesítése a játék zárásának napján! </div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1269411">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 24 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1269411&page=14" onclick="javascript:seen_new(this,'1269411'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">IV. nCore contest vége</span><br/><br/>Kedves Felhasználóink!<br/><br/>Véget ért a IV. nCore Contest, melynek keretében minél több kérés teljesítését céloztuk meg. A verseny sikerrel zárult, ugyanis 60-an vettetek részt rajta, ezáltal 676 db kérést teljesítve.<br/><br/>Köszönjük a részvételt minden versenyzőnek, reméljük jól éreztétek magatokat! A nyeremények kiosztása hamarosan megtörténik.<br/><br/>Akik nem tudtak részt venni a Contesten ne csüggedjenek, őket is várjuk szombat este 8-kor a <a href="discord.php" class="bb-url">discord</a> szerverünkön, ahol egy kisebb kvízre kerül sor.</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1268432">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 26 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1268432&page=14" onclick="javascript:seen_new(this,'1268432'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyerj páros bérletet a SZIN-RE!</span> - <a href="forum.php?action=comments&amp;thread_id=29731" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/sq45k.jpg" alt="https://i.kek.sh/p1/sq45k.jpg" class="lazy bb-image"  /></div><br/><br/><span style="font-weight:bold">Nyeremények:</span> <br/><br/>&bull;&nbsp;7 db páros <span style="text-decoration:underline">bérlet</span><br/><br/><br/><br/>SZIN fellépők és program itt: <a href="https://dereferer.me/?https://szin.org/" target="_blank" class="bb-url">https://szin.org/</a><br/><br/><span class="highlight">A bérletek névre szólnak és nem átruházhatóak, átvételükhöz a nyertes(ek) személyes adatainak megadása szükséges!</span><br/><br/><br/>A játék oldalát itt éritek el: <a href="/nyeremenyjatek.php" class="bb-url">Nyereményjáték</a><br/>Bővebb információ: <a href="/wiki.php?action=read&amp;id=949" class="bb-url">Szabályzat</a><br/>A kérdésekre <span style="font-weight:bold">2019-08-06 02:01:04-ig </span>tudtok válaszolni.</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1268018">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 27 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1268018&page=14" onclick="javascript:seen_new(this,'1268018'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">IV. nCore Contest - Kérések</span> - <a href="forum.php?action=comments&amp;thread_id=29714" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify"><br/>Kedves Felhasználóink!<br/><br/>Korábban rendezett feltöltési versenyeink nagy sikerére tekintettel úgy döntöttünk, hogy idén újabb kihívás elé állítunk titeket. Segítségetek természetesen most sem marad jutalom nélkül.<br/><br/>Az nCore Contest IV. fordulójában minél több <a href="requests.php" class="bb-url">Kérés</a> teljesítése lesz a cél. A kérések teljesítéséért járó pontok mellett a legaktívabb feltöltők az alábbi jutalmakban részesülnek:<br/><br/>1. hely: 15.000 bónuszpont és 1 hónap Legend rang vagy 1 hónap prémium tagság<br/>2. hely: 10.000 bónuszpont és 1 hónap Legend rang vagy 1 hónap prémium tagság<br/>3. hely: 5.000 bónuszpont és 1 hónap Legend rang vagy 1 hónap prémium tagság<br/>4. hely: 3.000 bónuszpont és 1 hónap Legend rang<br/>5. hely: 2.000 bónuszpont és 1 hónap Legend rang<br/><br/>Különdíj: a további versenyzők közül az első 50 helyezettből véletlenszerűen fogunk kiválasztani egy szerencsést, akinek jutalma 1.000 bónuszpont és 1 hónap Legend rang lesz.<br/><br/>A verseny időtartama: 2019.07.14. 22:00 - 2019.07.28. 22:00<br/><br/>Szabályok:<br/>&bull;&nbsp; Ebben a fordulóban kizárólag a kérésre feltöltött torrentek vesznek részt.<br/>&bull;&nbsp; A játékba mindenki bekapcsolódhat, akinek engedélyezve van a feltöltési joga.<br/>&bull;&nbsp; Minden egyes elfogadott kérés teljesítés felkerül az összesített ranglistára, melyet <a href="torrents.php?action=contest " class="bb-url">ITT</a> láthattok.<br/>&bull;&nbsp; Ha olyan kérést találtok, ami már megtalálható az oldalon (a kért formátumban), azt ne tegyétek fel, hanem jelentsétek a kérést.<br/>&bull;&nbsp; Csalás/összejátszás esetén a Staff az illetőt a versenyből kizárja, és a csalás mértékének megfelelően szankcionálja.<br/><br/><span style="font-style:italic">Ha valaki a verseny alatt feltöltési korlátba ütközne, írjon a Helpdesk menüben egy levelet [Staff] előtaggal, és a contest végéig Legend rangot biztosítunk (ami nem fog kihatni a hónap végi hit'n'run-ra). A rangot csak akkor adjuk meg, ha a levél írása előtt elérte a feltöltési korlátot az illető.</span><br/><br/>Sok szerencsét és kellemes időtöltést kívánunk az oldalon!<br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1266149">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 30 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1266149&page=14" onclick="javascript:seen_new(this,'1266149'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyerj páros VIP hétvégi jegyet az EFOTT-RA! II.</span> - <a href="forum.php?action=comments&amp;thread_id=29669" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/KnRjF.png" alt="https://i.kek.sh/p1/KnRjF.png" class="lazy bb-image"  /></div><br/><br/><span style="font-weight:bold">Nyeremények:</span> <br/><br/>&bull;&nbsp;Páros, 3 napos VIP hétvégi jegy, amit csak az nCore jóvoltából nyerhetsz meg!<br/>&bull;&nbsp;10 db 1 hónapos prémium funkció. <br/><br/><br/>EFOTT fellépők és program itt: <a href="https://dereferer.me/?http://efott.hu/" target="_blank" class="bb-url">http://efott.hu/</a><br/><br/><span class="highlight">A jegyek névre szólnak és nem átruházhatóak, átvételükhöz a nyertes(ek) személyes adatainak megadása szükséges!</span><br/><br/><br/>A játék oldalát itt éritek el: <a href="/nyeremenyjatek.php" class="bb-url">Nyereményjáték</a><br/>Bővebb információ: <a href="/wiki.php?action=read&amp;id=949" class="bb-url">Szabályzat</a><br/>A kérdésekre <span style="font-weight:bold">2019.07.01 01:04-ig </span>tudtok válaszolni. </div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1257664">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 2 éve 42 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1257664&page=14" onclick="javascript:seen_new(this,'1257664'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">2019.04.01.</span><br/><br/>Kedves Felhasználók!<br/><br/>Sajnálattal kell közölnünk, hogy idén az áprlis 1-jei poén elmarad.<br/>Eredetileg úgy gondoltuk, hogy kicsit trollkodunk a <a href="https://dereferer.me/?https://rtl.hu/impresszum" target="_blank" class="bb-url">Magyar RTL Televízió Zrt.-vel</a> egy flashmob formájában, hogy újra hunyjanak szemet a felkerülő anyagaik felett, de ezt egy <a href="https://dereferer.me/?https://index.hu/mindekozben/poszt/2019/04/01/mutatunk_egy_kepet_az_rtl_klub_elotti_gigatuntetesrol/" target="_blank" class="bb-url">nagyszabású tüntetés megakadályozta.</a> Ezért sajnos továbbra is töröljük a felkerülő anyagukat, amire a <a href="https://dereferer.me/?http://www.proart.hu/" target="_blank" class="bb-url">ProArt</a> is hetente emlékeztet. <br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/w5ZVk.jpg" alt="https://i.kek.sh/p1/w5ZVk.jpg" class="lazy bb-image"  /></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1246308">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1246308&page=14" onclick="javascript:seen_new(this,'1246308'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2019</span> - <a href="forum.php?action=comments&amp;thread_id=29196" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center">Kedves Felhasználóink!<br/><br/>Sikerekben gazdag, boldog új évet kívánunk mindannyiótoknak! <img border="0" src="https://static.ncore.pro/static/smilies/clover.gif" alt="" /><br/><br/><span style="font-weight:bold"><span class="highlight">Újév alkalmából Prémium akciót hirdetünk, melynek keretében a legtöbb csomag időtartamát meghosszabbítottuk! <br/>Kérjük, tekintsétek meg megújult kínálatunkat. Az akció részleteit a <a href="premium.php" class="bb-url">Prémium</a> menüben érhetitek el.<br/></span></span><br/><br/><img border="0" src="https://i.kek.sh/p1/Y9oiG.png" alt="https://i.kek.sh/p1/Y9oiG.png" class="lazy bb-image"  /></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1245612">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1245612&page=14" onclick="javascript:seen_new(this,'1245612'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Karácsony 2018</span> - <a href="forum.php?action=comments&amp;thread_id=29168" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><br/><div style="text-align:center">Kedves Felhasználóink!<br/><br/>Szeretnénk köszönetet mondani az egész éves támogatásotokért, aktivitásotokért és ezúton kívánunk boldog karácsonyt mindenkinek! <br/><br/><br/><br/><img border="0" src="https://i.kek.sh/p1/lGU9D.png" alt="https://i.kek.sh/p1/lGU9D.png" class="lazy bb-image"  /></div><br/></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1239568">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1239568&page=14" onclick="javascript:seen_new(this,'1239568'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k18 vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért.<br/><br/>Az nCore védelmében <span style="font-size:10pt"><span style="font-weight:bold">155 191</span></span> felhasználó segítette a Staffot, akiknek közös erővel <span style="font-size:10pt"><span style="font-weight:bold">1 126 117</span></span> szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint <span style="font-size:10pt"><span style="font-weight:bold">755</span></span> alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt.<br/>Gratulálunk <span style="font-size:10pt"><span style="font-weight:bold">eva0408</span></span>nak, aki a legtöbb figurát kapta el.<br/>A második legtöbb tököt elkapó felhasználó <span style="font-size:10pt"><span style="font-weight:bold">auroryta</span></span> lett. Mögötte éppen csak lemaradva, a harmadik helyezett egy neve elhallgatását kérő felhasználó lett.<br/><br/>A Staff emellett úgy döntött, hogy idén a figurák legalább 93%-ának visszaverésében segítő felhasználók jutalmában azok is részesülnek, akik legalább 88%-os teljesítményt nyújtottak. <br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1238742">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1238742&page=14" onclick="javascript:seen_new(this,'1238742'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k18</span> - <a href="forum.php?action=comments&amp;thread_id=28984" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" width="550" height="280" src="https://i.kek.sh/p1/ZdGYn.png" alt="https://i.kek.sh/p1/ZdGYn.png" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó felhasználók a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 1000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma ezen felül 1 hónap Legend rang!<br/>&bull;&nbsp;Aki legalább a figurák 93%-ának visszaverésében segít, a fentiek mellett további 1000 pontot, 1 év Legend rangot és egy színes <span class="highlight">Spooky Master</span> egyéni rangot kap ajándékként!<br/><br/><span class="highlight"><span style="font-weight:bold">A Spooky Dayz indulásával egyidejűleg akciót hirdettünk azon új Prémium csomagjainkra is, amelyeket PayPal segítségével tudtok megvásárolni. Az akcióról a <a href="premium.php" class="bb-url">Prémium</a> menüben tájékozódhattok részletesen!</span></span><br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="discord.php" class="bb-url">Discord csatornánkat</a>!<br/><br/><span style="font-weight:bold">Az idei Spooky Dayz figuráinak megalkotását köszönjük <a href="https://dereferer.me/?https://izsakambrus.wixsite.com/isaacomix" target="_blank" class="bb-url">Ambrus Izsák</a> grafikusnak!<br/><br/>Külön köszönetet szeretnénk mondani néhány felhasználónknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> Barwston, Bayernfan25, BenSomosi, Boba0514, CoreGergo, DshadoW, Duckee788, Endrebandi, GetRight, GyuriZoli, Happydoll, Kaladani22, Kangarouge, Kory5, LIRDCE, Lampard216, Leckie, LiftThatShit, Loren, NaZo0917, Photoshop, SilentDaddy, SkyRex, Suria, ZserboTe, ccadmin, cloudless, davipajti, faludi1996, futar, iBRLCode, naziking1488, nyalkascsiga, polischka58, roli1988, roothenger, salays, simson14, tibi9703, tonight, torrent5, toxigen, tyrichie, yorkin, zsalab90, zsofi19.<br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1225279">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 29 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1225279&page=14" onclick="javascript:seen_new(this,'1225279'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyerj páros VIP hétvégi jegyet az EFOTT-RA! (II.)</span> - <a href="forum.php?action=comments&amp;thread_id=28607" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/rlVO5.jpg" alt="https://i.kek.sh/p1/rlVO5.jpg" class="lazy bb-image"  /></div><br/><br/><br/><span class="highlight">A sorsolás és a nyertes(ek) értesítése: július 5.</span><br/><br/><span style="font-weight:bold">Nyeremények:</span> <br/><br/>&bull;&nbsp;2 db 3 napos VIP hétvégi jegy, amit csak az nCore jóvoltából nyerhetsz meg!<br/>&bull;&nbsp;10 db 1 hónapos prémium funkció. <br/><br/><br/>EFOTT fellépők és program itt: <a href="https://dereferer.me/?http://efott.hu/" target="_blank" class="bb-url">http://efott.hu/</a><br/><br/><span class="highlight">A jegyek névre szólnak és nem átruházhatóak, átvételükhöz a nyertes(ek) személyes adatainak megadása szükséges.</span><br/><br/><br/>A játék oldalát itt éritek el: <a href="/nyeremenyjatek.php" class="bb-url">Nyereményjáték</a><br/>Bővebb információ: <a href="/wiki.php?action=read&amp;id=949" class="bb-url">Szabályzat</a><br/>A kérdések megválaszolásának határideje: 2018-07-05 00:20:07</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1223773">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 31 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1223773&page=14" onclick="javascript:seen_new(this,'1223773'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Nyerj páros VIP hétvégi jegyet az EFOTT-RA!</span> - <a href="forum.php?action=comments&amp;thread_id=28559" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/bFuwp.png" alt="https://i.kek.sh/p1/bFuwp.png" class="lazy bb-image"  /></div><br/><br/><span style="font-weight:bold">Nyeremények:</span> <br/><br/>&bull;&nbsp;2 db 3 napos VIP hétvégi jegy, amit csak az nCore jóvoltából nyerhetsz meg!<br/>&bull;&nbsp;10 db 1 hónapos prémium funkció. <br/><br/><br/>EFOTT fellépők és program itt: <a href="https://dereferer.me/?http://efott.hu/" target="_blank" class="bb-url">http://efott.hu/</a><br/><br/><span class="highlight">A jegyek névre szólnak és nem átruházhatóak, átvételükhöz a nyertes(ek) személyes adatainak megadása szükséges.</span><br/><br/><br/>A játék oldalát itt éritek el: <a href="/nyeremenyjatek.php" class="bb-url">Nyereményjáték</a><br/>Bővebb információ: <a href="/wiki.php?action=read&amp;id=949" class="bb-url">Szabályzat</a></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1212488">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 45 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1212488&page=14" onclick="javascript:seen_new(this,'1212488'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Márciusi update</span><br/><br/>Kedves Felhasználók!<br/><br/>Felhívnánk figyelmeteket néhány, az utóbbi időben jelentkező problémára:<br/><br/><span class="highlight">uTorrent sebezhetőség</span><br/>A legnépszerűbb torrent kliensben, az uTorrentben súlyos biztonsági rést fedeztek fel, mely adataitok ellopásához, és gépetek megfertőződéséhez vezethet, ezért javasolt a kliens mielőbbi cseréje. Az uTorrent helyett a qBittorrentet (<a href="https://dereferer.me/?https://www.qbittorrent.org/" target="_blank" class="bb-url">Letöltés</a>) ajánljuk, melynek felülete nagyon hasonló, viszont sokkal megbízhatóbb. A korábban letöltött torrenteket könnyedén átvihetitek az új kliensbe, ehhez az alábbi <a href="wiki.php?action=read&amp;id=2117" class="bb-url">leírás</a> nyújt segítséget. Továbbá érdemes a qBittorrent beállításait a <a href="https://dereferer.me/?https://i.kek.sh/p1/TNAzW.jpg" target="_blank" class="bb-url">képen látható módon</a> megváltoztatni, hogy ne korlátozza az egyszerre futtatható torrentek számát. Aki a fentiek ellenére továbbra is az uTorrentet szeretné használni, saját felelősségére megteheti. A qBittorrent topikját <a href="forum.php?action=comments&amp;thread_id=550" class="bb-url">itt</a> találjátok.<br/><br/><span class="highlight">Get It Right kampány – felszólító levelek Angliában</span><br/>Többen jeleztétek felénk, hogy illegális letöltés miatt leveleket kaptok az internetszolgáltatótoktól. Ezen levelek hátterében a Get It Right nevű kampány áll, ami egy – a kormányzat által támogatott – szervezet, melynek célja a szerzői jogsértések csökkentése, felhívva a figyelmet a legális alternatívákra. Bármilyen jogvédett anyag illegális letöltéséért vagy feltöltéséért kaphattok felszólítást. Ez ellen hatásos védelmet egy VPN szolgáltatás beszerzése jelenthet. Az ingyenes VPN használatával kapcsolatban különböző aggályok merülhetnek fel, ezért mindenképpen fizetős VPN szolgáltatást javasolnánk. Természetesen felelősséget nem tudunk ezért vállalni, továbbra is mindenki saját felelősségére töltsön le.<br/><br/><span class="highlight">E-mail cím ellenőrzés</span><br/>Fontos, hogy bizonyos időközönként ellenőrizzétek a <a href="profile.php?action=config" class="bb-url">Beállítások</a> menüben megadott e-mail címeteket, mivel elfelejtett jelszó esetén ide küldünk jelszóemlékeztetőt. Ezenkívül egyre gyakrabban tapasztaljuk, hogy az általunk küldött levelek (pl.: meghívó, jelszóemlékeztető) nem, vagy csak a SPAM mappába érkeznek meg, ezért mindenkinek <a href="https://dereferer.me/?https://gmail.com" target="_blank" class="bb-url">gmail.com</a>-os e-mail cím használatát javasoljuk.</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1209953">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 3 éve 48 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1209953&page=14" onclick="javascript:seen_new(this,'1209953'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Discord</span> - <a href="forum.php?action=comments&amp;thread_id=28096" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><br/><img border="0" width="125" height="125" data-original="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/f1cc49bb01545b2257b081c54f1a4be9/https%3A%2F%2Fi.imgur.com%2FlDqI2of.png" alt="https://i.imgur.com/lDqI2of.png" class="lazy bb-image"  /><br/></div><br/><br/>Kedves Felhasználóink!<br/><br/>A 21. század igényeihez igazodva IRC csatornáink mellett megnyílt hivatalos <span style="font-weight:bold">Discord</span> szerverünk is, ahol gyorsan értesülhettek az oldallal kapcsolatos hírekről, kérhettek segítséget, vagy beszélgethettek felhasználótársaitokkal.<br/>A csatlakozáshoz szükséges információkat <a href="discord.php" class="bb-url">itt találjátok meg</a>!<br/><br/>Az nCore Staff</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1204956">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 0 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1204956&page=14" onclick="javascript:seen_new(this,'1204956'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt">Kedves Felhasználóink!<br/><br/>Ismét elrepült egy év, 13 éves lett az oldal!<br/>Szeretnénk megköszönni feltöltőink fáradozását és kitartóan seedelő felhasználóink munkáját!<br/><br/>További kellemes időtöltést kívánunk!<br/><br/><img border="0" src="https://static.ncore.pro/static/smilies/hbd.gif" alt="" /></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1202768">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1202768&page=14" onclick="javascript:seen_new(this,'1202768'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2018</span> - <a href="forum.php?action=comments&amp;thread_id=27873" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><br/>Sikerekben gazdag, boldog új esztendőt kívánunk minden kedves felhasználónknak! <img border="0" src="https://static.ncore.pro/static/smilies/clover.gif" alt="" /><br/><br/><img border="0" data-original="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/9cb51627b167b8d450789ab34a995e7a/https%3A%2F%2Fi.imgur.com%2FhQMO2P8.jpg" alt="https://i.imgur.com/hQMO2P8.jpg" class="lazy bb-image"  /><br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1201541">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 4 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1201541&page=14" onclick="javascript:seen_new(this,'1201541'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Karácsony 2017</span> - <a href="forum.php?action=comments&amp;thread_id=27829" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><br/>Kedves Felhasználóink!<br/><br/>Szeretnénk köszönetet mondani az egész éves támogatásotokért, aktivitásotokért és ezúton kívánunk boldog karácsonyt mindenkinek!<br/><br/><img border="0" data-original="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/5fff811066237c472b484e093900a92f/https%3A%2F%2Fi.imgur.com%2FXtAcHKP.png" alt="https://i.imgur.com/XtAcHKP.png" class="lazy bb-image"  /><br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1195357">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 10 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1195357&page=14" onclick="javascript:seen_new(this,'1195357'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Új téma - Mist</span><br/><br/>Kedves felhasználók!<br/><br/>Örömmel jelentjük be, hogy egy új témával egészült ki az oldal KRi2-nek köszönhetően.<br/>Létrehozásánál az elsődleges cél, az egyszerűsítés, a feleslegek kidobása, a megkötések lehetséges leverése, melyek után az új technikák segítségével egy teljesen modern, letisztult, faék egyszerűségű oldal megalkotása volt.<br/><br/><a href="profile.php?action=config" class="bb-url">Használjátok egészséggel!</a><br/><br/><a href="/forum.php?action=comments&amp;thread_id=27481" class="bb-url">Bugreportot, kérést, óhajt, sóhajt, panaszt ide várunk!</a></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1195019">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1195019&page=14" onclick="javascript:seen_new(this,'1195019'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k17 vége</span><br/><br/>Kedves Felhasználóink! <br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért. <br/><br/>Az nCore védelmében 177 476 felhasználó segítette a Staffot, akiknek közös erővel 1 097 341 szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint 795 alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt. <br/>Gratulálunk Bayernfan25nek, aki a legtöbb figurát kapta el. <br/>A második legtöbb tököt elkapó felhasználó eva0408 lett. Mögötte éppen csak lemaradva, a harmadik helyezett lett eszug. <br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1194071">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 11 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1194071&page=14" onclick="javascript:seen_new(this,'1194071'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2k17</span> - <a href="forum.php?action=comments&amp;thread_id=27589" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" data-original="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/157a2e6687fe03ef98d8975374b15073/https%3A%2F%2Fi.imgur.com%2FrqE1fBy.jpg" alt="https://i.imgur.com/rqE1fBy.jpg" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó felhasználók a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 1000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma 1 hónap Legend rang, továbbá 1000 pont!<br/>&bull;&nbsp;Aki legalább a figurák 93%-ának visszaverésében segít, 1 év Legend rangot, 2000 pontot és egy színes <span class="highlight">Spooky Master</span> egyéni rangot kap ajándékként!<br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="wiki.php?action=read&amp;id=138" class="bb-url">IRC csatornánkat</a>!<br/><br/><span style="font-weight:bold">Külön köszönetet szeretnénk mondani néhány felhasználónknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> <span style="font-style:italic">AirDrone, Bayernfan25, Bookember, Dragoneye, GetRight, Happydoll, Henits15, IceTea, Inad27, JF05, Kaladani22, Kardoso, kasbandi, Kooni, Kory5, Kurultay, Lampard216, Leckie, Linkines, Loren, Mclaren1993, NaZo0917, Nauhath, PeLa, PhantomBoy27, Tollaspocok, Trashmetal, ccadmin, csontraket, davidko1231, dracouto, fejestibcsi, filmguru, gigazte, grubesa, kicsi1030, marcivok, metalfan, nikosssz, retry, simond, simson14, tibi9703, torrent5.</span><br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1172116">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 40 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1172116&page=14" onclick="javascript:seen_new(this,'1172116'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Húsvéti kvíz 2017</span> - <a href="forum.php?action=comments&amp;thread_id=26748" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Kedves Felhasználók!<br/><br/>Ezúton kívánunk mindnyájatoknak kellemes húsvéti ünnepeket!<br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/VJh7e.png" alt="https://i.kek.sh/p1/VJh7e.png" class="lazy bb-image"  /></div><br/><br/>Az ünnep alkalmából keresztrejtvénnyel készültünk nektek, amelyet <a href="kviz.php" class="bb-url">ITT</a> tölthettek ki. Minden helyesen válaszoló felhasználó egy hímes tojással gazdagodik <img border="0" src="https://static.ncore.cc/static/images/kviz_ico.png" alt="https://static.ncore.cc/static/images/kviz_ico.png" class="lazy bb-image"  />. <br/><br/>A megoldások beküldésének határideje: 2017.04.23. 21 óra<br/><br/><br/><span class="highlight"><span style="font-weight:bold">A játék leírása:</span></span><br/>A keresztrejtvény alatt található 8 kérdést kell megválaszolnotok, a válaszokat a kérdés száma szerinti sorba kell beírnotok. A színes négyzetekben szereplő betűket fentről lefelé összeolvasva megkapjátok <span style="font-weight:bold">a</span> rejtvény <span style="font-weight:bold">megfejtés</span>ét, amely <span style="font-weight:bold">egy értelmes magyar szó</span>.<br/><br/><span class="highlight"><span style="font-weight:bold">Fontos tudnivalók:</span></span><br/>&bull;&nbsp; A keresztrejtvény minden négyzetének kitöltése kötelező!<br/>&bull;&nbsp; A megoldás ellenőrzésénél nem vesszük figyelembe a kis- és nagybetűket!<br/>&bull;&nbsp; A megoldás angol abc karaktereivel megadott változata is megfelelő!<br/>&bull;&nbsp; Csupán egy lehetőségetek van a megoldás beküldésére, így figyeljetek arra, hogy helyesen írtátok-e be a megfejtést!<br/>&bull;&nbsp; A megoldás publikálása kizárást eredményezhet. <br/></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1170072">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 4 éve 42 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1170072&page=14" onclick="javascript:seen_new(this,'1170072'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Új tulajdonos </span> - <a href="forum.php?action=comments&amp;thread_id=26679" class="bb-url">Hozzászólok a fórumban!</a><br/><br/>Kedves Felhasználók!<br/><br/>Az oldal kinézetét az új tulajdonos kérésére megváltoztattuk, hamarosan érkezik az arab nyelvi frissítés is. <br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/mAv3e.jpg" alt="https://i.kek.sh/p1/mAv3e.jpg" class="lazy bb-image"  /></div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1158008">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 5 éve 3 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1158008&page=14" onclick="javascript:seen_new(this,'1158008'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">BÚÉK 2017</span><br/><br/>Tisztelt seedelő felhasználóink!<br/><br/>Az elmúlt években bebizonyítottátok, hogy összefogva nagy dolgokra vagyunk képesek.<br/>Az oldal ma már növekvő pályán van, többen seedeltek mint fizettek elő prémiumra, és az oldalt is egyre többen látogatjátok. Az nCore ma már erősödik.<br/><br/>Ez az eredmény mindannyiunk közös sikere.<br/><br/>A mögöttünk hagyott 11 év embert próbáló időszak volt. Többször kellett újrakezdeni szinte a semmiből. Az oldal –Nektek köszönhetően- újra és újra talpra tudott állni. A ma sikereiben az előttünk is tisztességesen seedelő felhasználók munkája is benne van.<br/>Ezt soha nem szabad elfelejtenünk.<br/><br/>A vezetőség minden megtesz azért, hogy érdemi támogatást nyújtson a hűséges felhasználóinak. Ezért döntöttünk az aránymentességről, és ezért tettük lehetővé, hogy minél többen regisztrálhassanak az oldalra.<br/><br/>Mivel a rendszeresen seedelő felhasználóink az idén a vártnál is jobban teljesítettek, ezért döntéseket hoztunk. <span style="font-weight:bold">Minden olyan felhasználó aki több mint egy éve regisztrált, nincs letöltésmegvonása valamint nincs meghívója, kapott egy meghívót.</span><br/><br/>Szeretnénk megbecsülni azokat, akik több éven át dolgoztak, hogy ez az oldal talpra álljon és erősödjön. Az nCore felhasználói továbbra is számíthatnak egy stabil, erősödő oldalra.<br/><br/>Jó letöltéseket kívánva az új évre üdvözlettel:<br/><br/>Staff <img border="0" src="https://static.ncore.pro/static/smilies/yay.gif" alt="" /></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 	<div class="news_sepa"></div>
+	<div class="news_extra" id="new_1157054">
+		<div class="news_right2">
+			<div class="news_right_top">
+				<span class="comment">Hír létrehozva 5 éve 4 hete:</span>
+				<span class="news_own"><a href="ajax.php?action=news_ok&id=1157054&page=14" onclick="javascript:seen_new(this,'1157054'); return false;">Hírt olvasottnak jelölni!</a></span>
+			</div>
+			<div class="news_right_txt"><span style="font-weight:bold">Boldog karácsonyt 2016</span> - <a href="forum.php?action=comments&amp;thread_id=26192" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/BqYtl.png" alt="https://i.kek.sh/p1/BqYtl.png" class="lazy bb-image"  /><br/><br/>Kedves Felhasználóink!<br/><br/>Szeretnénk köszönetet mondani az egész éves támogatásotokért, aktivitásotokért és ezúton kívánunk boldog karácsonyt mindenkinek!</div></div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 8 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">Black Friday!</span><br/><br/>Kedves felhasználók!<br/><br/>Az idén mi is készültünk <span class="highlight"><span style="font-weight:bold">Black Friday</span></span> akcióval, amiről bővebb információt a <a href="/premium.php" class="bb-url">prémium</a> oldalon találtok.<br/><br/>Ezen kívül, két fejlesztésre is szeretnénk felhívni a figyelmetek:<br/>&bull;&nbsp; Megújítottuk az <a href="/recommended.php" class="bb-url">Ajánló</a> menüpontot, mostantól az aktuális toplistát is láthatjátok<br/>&bull;&nbsp; Bevezetésre került a <a href="/wiki.php?action=read&amp;id=1022" class="bb-url">kétlépcsős azonosítás</a> lehetősége. <br/><br/><span style="font-weight:bold">Figyelem ezt a funkciót biztonsági okokból nem áll módunkban aktiválás után kikapcsolni, ezért mentsétek el a tartalék kódokat!</span></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 11 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2016 vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Segítségeteknek köszönhetően a zombi- és boszorkányhadak ez idáig nem látott falba ütköztek, kénytelenek voltak visszavonulót fújni, ezért az idei SpOoKy DaYz véget ért.<br/><br/>Az nCore védelmében <span style="font-size:10pt"><span style="font-weight:bold">180 540</span></span> felhasználó segítette a Staffot, akiknek közös erővel <span style="font-size:10pt"><span style="font-weight:bold">1 407 351</span></span> szellemtől, macskától és egyéb démoni teremtménytől sikerült megvédeniük az oldalt. A boszorkányok és szellemek hada nem kevesebb, mint <span style="font-size:10pt"><span style="font-weight:bold">880</span></span> alkalommal rohamozta meg szervereinket, amelyek több-kevesebb sikerrel, de vették az akadályt.<br/>Gratulálunk <span style="font-size:10pt"><span style="font-weight:bold">Tankcsapda007</span></span>nek, aki a legtöbb figurát kapta el.<br/>A második legtöbb tököt elkapó felhasználó <span style="font-size:10pt"><span style="font-weight:bold">micike</span></span> lett. Mögötte éppen csak lemaradva, a harmadik helyezett lett <span style="font-size:10pt"><span style="font-weight:bold">Bloodx</span></span>.<br/><br/>Kiugróan magas lelkesedésetek miatt úgy döntöttünk, hogy idén a figurák legalább 93%-ának visszaverésében segítő felhasználók jutalmában azok is részesülnek, akik legalább 90%-os teljesítményt nyújtottak.<br/><br/>Jövő ilyenkor se menjetek el otthonotoktól távoli helyre, mivel gyanítjuk, hogy ismét megpróbálják majd elfoglalni az erődünket!</div></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 12 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">SpOoKy DaYz 2016</span> - <a href="forum.php?action=comments&amp;thread_id=25903" class="bb-url">Hozzászólok a fórumban!</a><br/><br/><div style="text-align:justify">Ismét elérkezett a rémségek éjszakája... a zombi- és boszorkányhadak fő célpontjai lettünk az idei évben is. Ahogy telnek az évek, a sikertelen támadások egyre nagyobb agressziót, éhséget és bosszúvágyat váltanak ki fő ellenségeinkből... egy cél lebeg a szemünk előtt: meggátolni őket tervük kivitelezésében! Ma estétől kezdve tehát senki sem érezheti magát biztonságban, mivel idén is kezdetét veszi a felhasználóink körében nagy sikernek örvendő</div><br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/bPExk.png" alt="https://i.kek.sh/p1/bPExk.png" class="lazy bb-image"  /></div><br/><br/><div style="text-align:justify"><span style="font-weight:bold">Azoknak, akik a közelmúltban csatlakoztak oldalunk felhasználótáborához, íme egy rövid ismertető az eseményről:</span><br/>A trackert rémségek szállták meg, akik átvették az irányítást az oldal felett: azonnal elkezdték tökökkel, és egyéb figurákkal bombázni azt. Arra kérünk benneteket, hogy közös összefogással erősítsük meg védelmünket! Amennyiben időben elkapjátok ezen figurákat, úgy az oldal nem látja ennek komoly kárát, ellenkező esetben beláthatatlan következményei lesznek a csatának!<br/>Segítségetek természetesen nem marad jutalom nélkül, de ügyeljetek arra, hogy az idei termés között is akad néhány különösen veszélyes figura!<br/><br/><span style="font-weight:bold">A legtöbb figurát elkapó felhasználók a támadások visszaverését követően jutalomban részesülnek. Az elérhető jutalmak nevezetesen az alábbiak:</span><br/>&bull;&nbsp;Az 500 legtöbb figurát elkapó felhasználó jutalma 1000 pont!<br/>&bull;&nbsp;A 100 legtöbb figurát elkapó felhasználó jutalma 1 hónap Legend rang, továbbá 1000 pont!<br/>&bull;&nbsp;Aki legalább a figurák 93%-ának visszaverésében segít, 1 év Legend rangot, 2000 pontot és egy színes <span class="highlight">Spooky Master</span> egyéni rangot kap ajándékként!<br/><br/><span style="font-weight:bold">A Spooky Dayz izgalmai mellett szeretnénk felhívni figyelmeteket az oldal új biztonsági funkciójára, a <a href="wiki.php?action=read&amp;id=1022" class="bb-url">kétlépcsős azonosítás</a>ra. Használatával nagyobb biztonságban tudhatjátok fiókotok, hiszen akkor is távol tarthatjátok az illetéktelen személyeket, ha már megszerezték a jelszavatokat.</span><br/><br/>Ha beszélgetni támad kedvetek játékostársaitokkal, keressétek fel <a href="wiki.php?action=read&amp;id=138" class="bb-url">IRC csatornánkat</a>!<br/><br/><span style="font-weight:bold">Külön köszönetet szeretnénk mondani néhány felhasználónknak, akik nélkül nem jöhetett volna létre az idei Spooky Dayz:</span> <span style="font-style:italic">Bookember, csardaspuliszka, DshadoW, fishyfrost, Henits15, iBRLCode, IceTea, Inad27, kasbandi, kicsi1030, kisakosh, LiftThatShit, Loren, MagyarValeria77, marcivok, NaZo0917, nikosssz, Phylloquinone, Ptesza, simson14, Tamenund, thotben, tonight, torrentguru, viktor621, zsomeszi.</span><br/><br/><span class="highlight"><span style="font-weight:bold">Soha ne vigyétek túlzásba a játékkal töltött időt! Fordítsatok kellő időt a pihenésre!</span></span></div></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 15 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">Őszi akció</span><br/><br/>Kedves felhasználók!<br/><br/>A Prémium csomagokra előfizetők október 16-ig akciós feltételek mellett vehetik igénybe a szolgáltatást, a pontos feltételekért látogassátok meg a <a href="/premium.php" class="bb-url">Prémium oldalt.</a><br/><br/>Az előfizető felhasználóknak automatikusan csökkentjük az eddigi hit'n'run-olt hónapjainak számát:<br/>&bull;&nbsp; 6 hónapos előfizetés esetén felezzük<br/>&bull;&nbsp; 12 hónapos előfizetés esetén töröljük<br/><br/><span style="font-weight:bold">Az akciós ajánlat feltétele, hogy a Prémium szolgáltatást október 16-ig aktiválni is kell.</span></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 18 hete:</span>
+					</div>
+					<div class="news_right_txt">Kedves felhasználók!<br/><br/>A világosabb színek kedvelőinek kedveskedve, új kinézetet tettünk elérhetővé az oldalon. Az nCore.Light témát a <a href="profile.php?action=config" class="bb-url">profil</a> oldalon tudjátok kiválasztani.<br/></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 30 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">Nyári akció</span><br/><br/>Kedves felhasználók!<br/><br/>A Prémium csomagokra előfizetők július 8-ig akciós feltételek mellett vehetik igénybe a szolgáltatást, a pontos feltételekért látogassátok meg a <a href="/premium.php" class="bb-url">Prémium oldalt.</a><br/><br/>Az előfizető felhasználóknak automatikusan csökkentjük az eddigi hit'n'run-olt hónapjainak számát:<br/>&bull;&nbsp; 6 hónapos előfizetés esetén felezzük<br/>&bull;&nbsp; 12 hónapos előfizetés esetén töröljük<br/><br/><span class="highlight">A nyaralásokra való tekintettel az akció időtartamát meghosszabbítottuk augusztus 15-ig.</span><br/><br/><span style="font-weight:bold">Az akciós ajánlat feltétele, hogy a Prémium szolgáltatást augusztus 15-ig aktiválni is kell.</span></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_block_all">
+		<div class="news_sepa" id="newssep_row_1125649"></div>
+			<div class="news" id="news_row_1125649">
+				<div class="news_left">
+					<img width="80" src="https://static.ncore.pro/styles/dark/avatar1.jpg">
+				</div>
+				<div class="news_right">
+					<div class="news_right_top">
+						<a href="profile.php?id=7139&action=news">himivarsejk</a> <span class="comment">írta 5 éve 36 hete:</span>
+													<span class="news_own"><a onclick="news_edit(1125649);" href="javascript:void(0);">Szerkesztés</a> | <a onclick="news_del(1125649);" href="javascript:void(0);">Törlés</a></span>
+											</div>
+					<div class="news_right_txt"><table style="border-collapse:collapse;"><tr><td class="bb_table_td2"><img border="0" width="100" height="143" src="https://nc-img.cdn.l7cache.com/covers/0J41JMLYaDgC9457?24235625" alt="https://nc-img.cdn.l7cache.com/covers/0J41JMLYaDgC9457?24235625" class="lazy bb-image" onload="scale(this,450);" /></td><td class="bb_table_td2"><a href="torrents.php?action=details&amp;id=1939480" class="bb-url">Ejjel-Nappal.Budapest.2016.01.28.HDTV.x264.Hun-ufo</a><br/><br/>Típus: Sorozat (HUN SD)<br/><br/>Méret: 406.58 MB</td></tr></table></div>
+				</div>
+			</div>
+			<div class="news_clear" style="clear:both;"></div>
+ <div class="newslist_comm" id="newslist_1125649">
+</div>
+<div class="close_news_comm" id="add_news_close_1125649">
+	<span class="comment add_news_h" onclick="document.getElementById('add_news_close_1125649').style.display='none';document.getElementById('add_news_1125649').style.display='block';document.getElementById('news_input_1125649').focus();">Hozzászólás ehhez a hírfolyamhoz...</span>
+</div>
+<div class="open_news_comm" id="add_news_1125649" style="display:none;">
+	<form method="post" id="newssubmit_1125649">
+		<input type="hidden" name="getUnique" value="9f00d94f050bc76a1a76c92e67801c7d">
+		<table>
+			<tr>
+				<td><textarea row="2" onKeyUp="autoresize(this);limitText('news_input_1125649','countdown_1125649',500);" onKeyDown="limitText('news_input_1125649','countdown_1125649',500);" onblur="if (this.value=='') {document.getElementById('add_news_1125649').style.display='none';document.getElementById('add_news_close_1125649').style.display='block';}" id="news_input_1125649" id="news_input_1125649" name="news_input" class="beviteliMezo_news_comm"></textarea></td>
+				<td><img onclick="send_news_comm('1125649');" alt="Mehet" src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7" class="g_mehet clickable" id="news_input_img_1125649"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="back_counter"><span class="comment">Még <span id="countdown_1125649">500</span> karakter írható.</span></td>
+			</tr>
+		</table>
+	</form>
+</div>
+		</div>
+		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 5 éve 42 hete:</span>
+					</div>
+					<div class="news_right_txt"><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Ezúton kívánunk mindnyájatoknak kellemes húsvéti ünnepeket!<br/><br/><div style="text-align:center"><img border="0" src="https://i.kek.sh/p1/2mlBW.png" alt="https://i.kek.sh/p1/2mlBW.png" class="lazy bb-image"  /></div><br/><br/>Az ünnep alkalmából rejtvényjátékkal készültünk nektek, amelyet <a href="kviz.php" class="bb-url">ITT</a> tölthettek ki. Minden helyesen válaszoló felhasználó 1 hónapig élvezheti a Prémium csomag előnyeit.<br/>A megoldások beküldésének határideje: 2016.03.31. 21:00<br/><br/>A nyeremények a határidő lejárta után kerülnek kiosztásra.</div><br/><br/><br/><span style="font-weight:bold"><span class="highlight">A játék leírása:</span></span><br/>Az alul olvasható 10 kérdést kell megválaszolnotok, a válaszokat a kérdés száma szerinti sorba szükséges „beírnotok”.* A piros színnel jelölt oszlopban szereplő betűket fentről lefelé összeolvasva megkapjátok a rejtvény megfejtését. Ezt kell beírni a legalul található válasz mezőbe, csupa kisbetűvel.<br/><br/>* A táblázat egy kép, így nem tudjátok kitölteni azt. A szavakat magatoknak kell feljegyezni.<br/><br/><span style="font-weight:bold"><span class="highlight">Fontos tudnivalók:</span></span><br/>Csupán egyetlenegy lehetőségetek van a megoldás beküldésére, így figyeljetek arra, hogy helyesen írtátok-e be a megfejtést! A keresett szót csupa kisbetűvel és szóköz nélkül kell beírni a beviteli mezőbe! (Figyeltünk a külföldön élőkre is, így ha ékezetek nélkül írjátok be a megfejtést, az is helyesnek minősül.)<br/>A szó beküldése után a beviteli mező eltűnik, így több próbálkozásra nincs lehetőség. A beküldés után nem kapsz róla értesítést azonnal, hogy a megfejtésed jó vagy rossz.</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 6 éve 0 hete:</span>
+					</div>
+					<div class="news_right_txt"><span style="font-weight:bold">III. nCore contest vége</span><br/><br/><div style="text-align:justify">Kedves Felhasználóink!<br/><br/>Tegnap 19 órakor véget ért az nCore contest harmadik fordulója, melynek keretében az eBook/HU kategóriát vehették célba közösségünk lelkes feltöltői. A versenyben <span style="font-size:12pt">109</span>-en vettetek részt, ezáltal csaknem <span style="font-size:12pt">2100 db</span> könyvvel gazdagítva a kategória kínálatát.<br/><br/>Időközben ismét eltelt egy év, január 16-án 11 éves lett az oldal. <img border="0" src="https://static.ncore.pro/static/smilies/hbd.gif" alt="" /><br/><br/>Köszönjük a részvételt minden versenyzőnek, reméljük jól éreztétek magatokat! A nyeremények kiosztása hamarosan megtörténik.</div></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 		<div class="news_sepa"></div>
+			<div class="news">
+				<div class="news_right2">
+					<div class="news_right_top">
+						<span class="comment">Hír létrehozva 6 éve 2 hete:</span>
+					</div>
+					<div class="news_right_txt">Kedves Felhasználók!<br/><br/>Ezúton szeretnénk köszönetet mondani azoknak a felhasználóknak akik ezidáig a szabályoknak megfelelően visszaosztották a letöltött anyagaikat.<br/>Az aránymentes rendszer bevezetése óta több mint 450 ezer felhasználó tartja be ezen szabályokat. Köszönjük Nekik, nélkülük nem tartanánk itt, ahol most!<br/><br/>Sajnálatos módon egyre több olyan felhasználó van aki a torrentezés lényegét figyelmen kívül hagyva, csak kapni szeret, ezért úgy gondoltuk, hogy 4 év után jelentősen szigorítunk a szankciórendszeren.<br/><br/>Tehát február 1-től az alábbi szabályok lépnek életbe:<br/><br/>Első 3 alkalom: 3 nap letöltés megvonás <br/>4. alkalom: 15 nap letöltés megvonás <br/>5. alkalom és utána: 30 nap letöltés megvonás valamint a legrosszabb 1% végleges megvonásban részesül.<br/><br/>Ezen szankciók továbbra is feloldhatók a Prémium funkció megvásárlásával, de ez az egyéb szabályok betartása alól továbbra sem mentesít. </div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+ 	<div id="korabbi">
+		<div id="korabbi_div">
+			<a id="korabbi_txt" href="javascript:void(0);" onclick="more_news('10', '1361879,1361129,1355687,1355099,1350686,1348148,1346305,1344854,1342513,1342204,1336666,1334737,1330739,1327888,1327039,1325164,1323827,1322870,1320172,1317405,1316935,1301843,1299964,1299490,1298626,1298502,1296426,1294873,1288907,1287768,1285281,1282924,1282241,1272087,1269985,1269411,1268432,1268018,1266149,1257664,1246308,1245612,1239568,1238742,1225279,1223773,1212488,1209953,1204956,1202768,1201541,1195357,1195019,1194071,1172116,1170072,1158008,1157054');">Még több hírfolyam mutatása...</a>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="news_block_left_b"></div>
+<div class="news_block_right_t"></div>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+	.hessteg-ad-block {
+		font-family: Roboto,"Helvetica Neue",sans-serif;
+		background:none;
+		text-align:center;
+		margin-bottom: 16px;
+		font-size: 12px;
+		padding-top: 8px;
+	}
+	.hessteg-ad-block [href] {
+		text-decoration: none;
+		cursor: pointer;
+		display: block;
+	}
+	.hessteg-ad img {
+		display: block;
+		margin: 0 auto;
+		max-width: 128px;
+	}
+	.hessteg-ad span {
+		font-weight: 500!important;
+		display:block;
+		margin: 8px 0;
+		font-size:14px;
+	}
+	.hessteg-ad p {
+		font-weight: 400!important;
+	}
+</style>
+		<div class="news_block_right hessteg-ad-block">
+			 <!--<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fhessteg&amp;width=230&amp;height=90&amp;colorscheme=dark&amp;show_faces=false&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=503595753002055" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:230px; height:90px;" allowTransparency="true"></iframe>-->
+					<a class="hessteg-ad" href="https://hessteg.com/feelgood-lista-2020/" target="_blank">
+				<img src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/1d5dd00034c4fd17215e06c69924ad15/https://hessteg.com/wp-content/uploads/2020/11/feelgood.png">
+				<span class="list_alert">Le vagy törve? Gyere, felvidítunk!</span>
+				<p>Összeállítottunk egy igazi feelgood listát, amitől garantáltan jobb keved lesz. Kattints és tarts velünk!</p>
+			</a>
+					<a class="hessteg-ad" href="" target="_blank">
+				<img src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/67322faafa90617e030139daf8d8d285/https://hessteg.com/wp-content/uploads/2020/11/r_vilagvege.png">
+				<span class="list_alert">Nincs szórakoztatóbb a világvégénél - katasztrófafilmek minden mennyiségben!</span>
+				<p>Csekkold óriási katasztrófafilm ajánlónkat, ettől rádöbbensz, hogy nem is vészes a helyzet!</p>
+			</a>
+					<a class="hessteg-ad" href="https://hessteg.com/sci-fi-filmek-ajanlo/" target="_blank">
+				<img src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/5053366c40fb9aa4c5e953951af2acc3/https://hessteg.com/wp-content/uploads/2020/05/r_scifi-01.png">
+				<span class="list_alert">Irány a végtelenbe és tovább - a nagy sci-fi filmajánló</span>
+				<p>Ismét egy őrületes listával jövünk, ezúttal a legütősebb sci-fi mozikat szedtük össze nektek. Kattintsatok és olvassátok!</p>
+			</a>
+					<a class="hessteg-ad" href="https://hessteg.com/legjobb-sorozatok/" target="_blank">
+				<img src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/d28c4807b227576fba7e47b2858f203c/https://hessteg.com/wp-content/uploads/2020/11/r_sorozatokuj.png">
+				<span class="list_alert">Darálnál valamit? Segítünk! A legjobb sorozatokért katt ide!</span>
+				<p>Itt az ideje egy újabb őrült jó listának, ezúttal a legütősebb sorozatok kerültek terítékre. Kattins, olvass, és darálj!</p>
+			</a>
+					<a class="hessteg-ad" href="https://hessteg.com/legjobb-vigjatekok/" target="_blank">
+				<img src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/cbe70128ef5b1523f049a20b09444513/https://hessteg.com/wp-content/uploads/2020/11/r_vigjatekuj.png">
+				<span class="list_alert">A komédiák királyai - a legjobb vígjátékok egy helyen!</span>
+				<p>A legjobb vígjátékokkal jön a legújabb kibeszélőnk. Kattints, tarts velünk és mondd el neked melyek a kedvenceid!</p>
+			</a>
+				</div>
+		<div class="news_block_right">
+
+
+<div style="float:left;">
+
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fncoreofficial&amp;width=230&amp;height=258&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=374719419333547" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:230px; height:258px;" allowTransparency="true"></iframe>
+
+		
+	<div class="right_rss_top">nCore Blog RSS</div>
+				<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2020/08/maganelet-adatvedelem-titkositas.html">Magánélet - adatvédelem, titkosítás</a></div>
+				<i>Nincs megjelenítendő szöveg...</i>			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2015/08/belepesi-problemak.html">Belépési problémák</a></div>
+				Kedves Felhasználóink!			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2015/01/anonim-uzenetkuldes-wickr.html">Anonim üzenetküldés - Wickr</a></div>
+				<i>Nincs megjelenítendő szöveg...</i>			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2014/07/vpn-tor.html">VPN, TOR...</a></div>
+				<i>Nincs megjelenítendő szöveg...</i>			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2014/06/vpn.html">VPN</a></div>
+				Sziasztok!Ui.: Kérlek a tesztelésnél vegyétek figyelembe hogy egy k...			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2014/06/elvitte-cica.html">Elvitte a cica!</a></div>
+				Hamarosan...			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2013/12/ne-fizess-ncore-meghivoert_27.html">Ne fizess nCore meghívóért!</a></div>
+				Az elmúlt időszakban ismét egyre többen írtak nekünk, hogy regisztr...			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2012/04/vpn-biztonsag-buntetesek-nemetorszagban.html">[Frissült] VPN, biztonság, büntetések Németországban</a></div>
+				Az elmúlt napok üzeneteiből ítélve úgy éreztem, eljött az ideje egy...			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2011/01/szunet.html">Szünet</a></div>
+				Kicsit pihenünk, jelenleg nincs pontos infó az újraindulás idejéről...			</div>
+						<div class="right_rss_txt">
+				<div class="right_rss_title"><a target="_blank" href="http://ncorenews.blogspot.com/2011/01/6-ev.html">6 év</a></div>
+				<i>Nincs megjelenítendő szöveg...</i>			</div>
+			</div>
+</div>
+<div class="news_block_right_b"></div>
+<div style="clear:both;"></div>
+         </div>
+        <div class="fobox_lab"></div>
+    </div>
+        </div>
+    </div>
+    </div>
+    <div id="div_body_space"></div>
+    </div>
+    <div id="footer_bg">
+        <div id="footer">
+    	<div id="footer_left">
+		        <a href="mailto:cels@ncore.pro" target="_blank"><img class="footer_link" src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAPAA8AAAINlI+py+0Po5y02otnAQA7"></a>            		<a href="#"></a>
+	</div>
+    	<div id="footer_center">nCore bzv3c633d2 | render: 52 ms | mem: 2 MiB | load: 1.76 2.23 2.44</div>
+    	<div id="footer_right"></div>
+        </div>
+    </div>
+        <script language="JavaScript" type="text/javascript" src="https://static.ncore.pro/static/js/ieupdate.js"></script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2914855-1']);
+		  _gaq.push(['_setSampleRate', '10']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <style>
+        #x-pop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #1b1b1b;
+            color: #fff;
+            flex-direction: column;
+            box-sizing: border-box;
+            place-content: center;
+            align-items: center;
+            font-family: Roboto, 'sans-serif';
+            font-size: 14px;
+        }
+        #x-pop h1 {
+            font-weight: 300;
+            margin: 0;
+            padding: 28px 0;
+            font-size: 20px;
+        }
+        #x-pop img {
+            width: 300px;
+        }
+        #x-pop p {
+            max-width: 540px;
+            line-height: 20px;
+            text-align: justify;
+        }
+        #x-pop .f {
+            display: flex;
+            height: 36px;
+        }
+        #x-pop .c {
+            text-decoration: underline;
+            color: #9ccc65;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var req = new Request('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', { method: 'HEAD', mode: 'no-cors' });
+
+        fetch(req).then(function (resp) {
+            return resp;
+        }).then(function () {
+        }).catch(function (e) {
+            var old = localStorage.getItem('adpt');
+            if (!old || (Date.parse(old) < new Date())) {
+                var date = new Date();
+                date.setDate(date.getDate() + 7);
+                localStorage.setItem('adpt', date);
+                localStorage.setItem('adpv', true);
+                window.location.replace('/premium.php');
+            }
+        });
+
+        if (localStorage.getItem('adpv') == 'true') {
+            localStorage.removeItem('adpv');
+            var el = document.getElementById('x-pop');
+            el.style.display = 'flex';
+        }
+    });
+
+    function closeXPop() {
+        var el = document.getElementById('x-pop');
+        el.style.display = 'none';
+    }
+    </script>
+
+    <div id="x-pop">
+        <img src="https://static.ncore.pro/static/images/true_love.svg">
+        <h1>Kedves felhasználónk!</h1>
+        <p>Kérjük az oldal hosszútávú működése érdekében mellőzd az Adblock használatát, vagy támogass minket egy általad választott prémium csomagra történő előfizetéssel.<br><br>Köszönjük!</p>
+        <span class="f"></span>
+        <span class="c" onclick="closeXPop()">A bezáráshoz kattints ide.</span>
+    </div>
+
+    
+    </body>
+    </html>
+    
